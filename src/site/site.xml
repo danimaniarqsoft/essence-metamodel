@@ -1,29 +1,95 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<project name="Maven">
-  <bannerLeft>
-    <name>Maven</name>
-    <src>http://maven.apache.org/images/apache-maven-project.png</src>
-    <href>http://maven.apache.org/</href>
-  </bannerLeft>
-  <bannerRight>
-    <src>http://maven.apache.org/images/maven-small.gif</src>
-  </bannerRight>
-  <body>
-    <links>
-      <item name="Apache" href="http://www.apache.org/" />
-      <item name="Maven 1.x" href="http://maven.apache.org/maven-1.x/"/>
-      <item name="Maven 2" href="http://maven.apache.org/"/>
-    </links>
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/DECORATION/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
+	<version position="bottom" />
+	<publishDate position="bottom" format="dd/MM/yyyy" />
+	<skin>
+		<groupId>lt.velykis.maven.skins</groupId>
+		<artifactId>reflow-maven-skin</artifactId>
+		<version>1.1.1</version>
+	</skin>
+	<custom>
+		<reflowSkin>
+			<!-- Themes -default|site|bootswatch-cerulean|bootswatch-readable|bootswatch-spacelab|bootswatch-spruce|bootswatch-united -->
+			<theme>bootswatch-spruce</theme>
+			<highlightJs>true</highlightJs>
+			<highlightJsTheme>github</highlightJsTheme>
+			<imgLightbox>true</imgLightbox>
+			<smoothScroll>true</smoothScroll>
+			<bootstrapCSS>true</bootstrapCSS>
+			<bootstrapIcons>true</bootstrapIcons>
+			<navbarInverse>false</navbarInverse>
+			<skinAttribution>false</skinAttribution>
+			<shortTitle><![CDATA[<img src="images/appbar2.png" width="25" height="25" alt="&quot;" infotec ' ="">]]></shortTitle>
+			<brand>
+				<name><![CDATA[<img src="images/infotec-logo2.png" alt="&quot;" infotec ' ="">]]></name>
+				<href>http://infotec.com.mx/</href>
+			</brand>
+			<bottomNav>
+				<column>reports</column>
+				<column>Markdown</column>
+			</bottomNav>
+			<bottomDescription quote="true">
+			<![CDATA[
+          	El pensamiento elevado y
+				puro, qué es generador de
+				magnificos
+				sistemas, sólo puede obtenerse a
+				través de los méritos.
+       		]]>
 
-    <menu name="Maven 2.0">
-      <item name="Introduction" href="index.html"/>
-      <item name="Download" href="download.html"/>
-      <item name="Release Notes" href="release-notes.html" />
-      <item name="General Information" href="about.html"/>
-      <item name="For Maven 1.x Users" href="maven1.html"/>
-      <item name="Road Map" href="roadmap.html" />
-    </menu>
+			</bottomDescription>
+			<pages>
+				<index project="component-skin">
+				</index>
+				<contribute>
+					<breadcrumbs>false</breadcrumbs>
+				</contribute>
+				<!-- Disable source highlighting for Maven reports -->
+				<source-repository>
+					<highlightJs>false</highlightJs>
+				</source-repository>
+				<issue-tracking>
+					<highlightJs>false</highlightJs>
+					<toc>false</toc>
+				</issue-tracking>
+				<license>
+					<highlightJs>false</highlightJs>
+					<toc>false</toc>
+				</license>
+				<!-- Disable ToC for some Maven reports -->
+				<project-info>
+					<toc>false</toc>
+				</project-info>
+				<github-report>
+					<toc>false</toc>
+				</github-report>
+				<dependencies>
+					<tocTopMax>4</tocTopMax>
+				</dependencies>
+			</pages>
+		</reflowSkin>
+	</custom>
+	<body>
+		<head>
+			<link rel="shortcut icon" href="images/favicon.png"></link>
+		</head>
+		<breadcrumbs>
+			<item name="Home" href="index.html" />
+			<item name="Autor" href="team-list.html" />
+		</breadcrumbs>
 
-    <menu ref="reports"/>
-  </body>
+		<menu ref="reports" />
+		<menu name="Información del proyecto" ref="reports" inherit="bottom" />
+		<menu name="Uso">
+			<item name="Configuración" href="configuracion.html" />
+			<item name="Ejemplos" href="ejemplo.html" />
+			<item name="Restricciones" href="restricciones.html" />
+		</menu>
+		<menu name="Markdown">
+			<item name="Sintaxis" href="markdown.html" />
+		</menu>
+		<footer>Todos los derechos reservados.</footer>
+	</body>
 </project>
