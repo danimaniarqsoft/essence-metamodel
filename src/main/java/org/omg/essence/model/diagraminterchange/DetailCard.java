@@ -21,37 +21,72 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.omg.essence.model.diagramInterchange;
+package org.omg.essence.model.diagraminterchange;
+
+import org.omg.essence.model.foundation.*;
 
 /**
- * The Class Node.
+ * The Class DetailCard.
  *
  * @author Daniel Cortes Pichardo
  * @version 1.1
  * @since essence 1.1
  */
-public class Node extends DiagramElement {
+public class DetailCard {
 
-    /** The bottom right label. */
-    private Label bottomRightLabel;
+    /** The left header side. */
+    private Node leftHeaderSide;
     
-    /** The name. */
-    private Label name;
+    /** The footer. */
+    private Label footer;
+    
+    /** The header. */
+    private Node header;
+    
+    /** The body. */
+    private Text body;
+    
+    /** The model element. */
+    private BasicElement modelElement;
 
-    public Label getBottomRightLabel() {
-        return bottomRightLabel;
+    public Node getLeftHeaderSide() {
+        return leftHeaderSide;
     }
 
-    public void setBottomRightLabel(Label bottomRightLabel) {
-        this.bottomRightLabel = bottomRightLabel;
+    public void setLeftHeaderSide(Node leftHeaderSide) {
+        this.leftHeaderSide = leftHeaderSide;
     }
 
-    public Label getName() {
-        return name;
+    public Label getFooter() {
+        return footer;
     }
 
-    public void setName(Label name) {
-        this.name = name;
+    public void setFooter(Label footer) {
+        this.footer = footer;
+    }
+
+    public Node getHeader() {
+        return header;
+    }
+
+    public void setHeader(Node header) {
+        this.header = header;
+    }
+
+    public Text getBody() {
+        return body;
+    }
+
+    public void setBody(Text body) {
+        this.body = body;
+    }
+
+    public BasicElement getModelElement() {
+        return modelElement;
+    }
+
+    public void setModelElement(BasicElement modelElement) {
+        this.modelElement = modelElement;
     }
 
 }

@@ -4,4 +4,4 @@
  * 
  * @since 1.1
  */
-package org.omg.essence.model.diagramInterchange;
+package org.omg.essence.model.diagraminterchange;

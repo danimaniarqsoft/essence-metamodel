@@ -130,10 +130,12 @@ public class ViewSelection extends LanguageElement {
         this.includedViewSelection = includedViewSelection;
     }
 
+    @Override
     public Collection<FeatureSelection> getFeatureSelection() {
         return featureSelection;
     }
 
+    @Override
     public void setFeatureSelection(Collection<FeatureSelection> featureSelection) {
         this.featureSelection = featureSelection;
     }

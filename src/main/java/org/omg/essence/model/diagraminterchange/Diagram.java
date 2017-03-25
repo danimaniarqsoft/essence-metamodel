@@ -21,14 +21,28 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.omg.essence.model.diagramInterchange;
+package org.omg.essence.model.diagraminterchange;
+
+import java.util.*;
 
 /**
- * The Class Label.
+ * The Class Diagram.
  *
  * @author Daniel Cortes Pichardo
  * @version 1.1
  * @since essence 1.1
  */
-public class Label {
+public class Diagram {
+
+    /** The diagram element. */
+    private Collection<DiagramElement> diagramElement;
+
+    public Collection<DiagramElement> getDiagramElement() {
+        return diagramElement;
+    }
+
+    public void setDiagramElement(Collection<DiagramElement> diagramElement) {
+        this.diagramElement = diagramElement;
+    }
+
 }

@@ -23,7 +23,6 @@
  */
 package org.omg.essence.model;
 
-
 /**
  * The Class QName.
  *
@@ -32,4 +31,7 @@ package org.omg.essence.model;
  * @since essence 1.1
  */
 public class QName {
+    /**
+     * It most be a concrete class
+     */
 }

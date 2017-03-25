@@ -31,4 +31,7 @@ package org.omg.essence.model;
  * @since essence 1.1
  */
 public class GraphicalElement {
+    /**
+     * It most be a concrete class
+     */
 }

@@ -21,28 +21,70 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.omg.essence.model.diagramInterchange;
-
-import java.util.*;
+package org.omg.essence.model.diagraminterchange;
 
 /**
- * The Class Diagram.
+ * The Class Link.
  *
  * @author Daniel Cortes Pichardo
  * @version 1.1
  * @since essence 1.1
  */
-public class Diagram {
+public class Link extends DiagramElement {
 
-    /** The diagram element. */
-    private Collection<DiagramElement> diagramElement;
+    /** The end 1 bounds. */
+    private Label end1bounds;
+    
+    /** The target. */
+    private Node target;
+    
+    /** The source. */
+    private Node source;
+    
+    /** The name. */
+    private Label name;
+    
+    /** The end 2 bounds. */
+    private Label end2bounds;
 
-    public Collection<DiagramElement> getDiagramElement() {
-        return diagramElement;
+    public Label getEnd1bounds() {
+        return end1bounds;
     }
 
-    public void setDiagramElement(Collection<DiagramElement> diagramElement) {
-        this.diagramElement = diagramElement;
+    public void setEnd1bounds(Label end1bounds) {
+        this.end1bounds = end1bounds;
+    }
+
+    public Node getTarget() {
+        return target;
+    }
+
+    public void setTarget(Node target) {
+        this.target = target;
+    }
+
+    public Node getSource() {
+        return source;
+    }
+
+    public void setSource(Node source) {
+        this.source = source;
+    }
+
+    public Label getName() {
+        return name;
+    }
+
+    public void setName(Label name) {
+        this.name = name;
+    }
+
+    public Label getEnd2bounds() {
+        return end2bounds;
+    }
+
+    public void setEnd2bounds(Label end2bounds) {
+        this.end2bounds = end2bounds;
     }
 
 }

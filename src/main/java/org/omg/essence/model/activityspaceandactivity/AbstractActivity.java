@@ -60,12 +60,28 @@ import org.omg.essence.model.foundation.BasicElement;
 public abstract class AbstractActivity extends BasicElement {
 
     /** The activity association. */
-    public Collection<ActivityAssociation> activityAssociation;
+    private Collection<ActivityAssociation> activityAssociation;
 
     /**
      * The criterion. A collection of criteria that have to be fulfilled for
      * entering the activity or considering the activity completed
      */
-    public Collection<Criterion> criterion;
+    private Collection<Criterion> criterion;
+
+    public Collection<ActivityAssociation> getActivityAssociation() {
+        return activityAssociation;
+    }
+
+    public void setActivityAssociation(Collection<ActivityAssociation> activityAssociation) {
+        this.activityAssociation = activityAssociation;
+    }
+
+    public Collection<Criterion> getCriterion() {
+        return criterion;
+    }
+
+    public void setCriterion(Collection<Criterion> criterion) {
+        this.criterion = criterion;
+    }
 
 }

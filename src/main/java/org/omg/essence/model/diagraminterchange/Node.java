@@ -21,14 +21,37 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.omg.essence.model.diagramInterchange;
+package org.omg.essence.model.diagraminterchange;
 
 /**
- * The Class DiagramElement.
+ * The Class Node.
  *
  * @author Daniel Cortes Pichardo
  * @version 1.1
  * @since essence 1.1
  */
-public class DiagramElement {
+public class Node extends DiagramElement {
+
+    /** The bottom right label. */
+    private Label bottomRightLabel;
+    
+    /** The name. */
+    private Label name;
+
+    public Label getBottomRightLabel() {
+        return bottomRightLabel;
+    }
+
+    public void setBottomRightLabel(Label bottomRightLabel) {
+        this.bottomRightLabel = bottomRightLabel;
+    }
+
+    public Label getName() {
+        return name;
+    }
+
+    public void setName(Label name) {
+        this.name = name;
+    }
+
 }
