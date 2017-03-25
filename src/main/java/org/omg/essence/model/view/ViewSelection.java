@@ -88,6 +88,7 @@ public interface ViewSelection extends LanguageElement {
      * The selected features, such as attributes and associations of constructs
      * to be included in the view.
      */
+    @Override
     Collection<FeatureSelection> getFeatureSelection();
 
 }

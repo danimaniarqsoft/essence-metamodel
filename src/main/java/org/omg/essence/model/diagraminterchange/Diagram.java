@@ -21,32 +21,21 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.omg.essence.model.diagramInterchange;
+package org.omg.essence.model.diagraminterchange;
 
-import org.omg.essence.model.foundation.BasicElement;
+import java.util.*;
 
 /**
- * The Class DetailCard.
+ * The Class Diagram.
  *
  * @author Daniel Cortes Pichardo
  * @version 1.1
  * @since essence 1.1
  */
-public interface DetailCard {
+@FunctionalInterface
+public interface Diagram {
 
-    /** The left header side. */
-    Node getLeftHeaderSide();
-
-    /** The footer. */
-    Label getFooter();
-
-    /** The header. */
-    Node getHeader();
-
-    /** The body. */
-    Text getBody();
-
-    /** The model element. */
-    BasicElement getModelElement();
+    /** The diagram element. */
+    Collection<DiagramElement> getDiagramElement();
 
 }

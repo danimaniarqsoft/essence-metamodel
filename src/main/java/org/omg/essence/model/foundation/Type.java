@@ -60,12 +60,12 @@ import java.util.*;
  * @version 1.1
  * @since essence 1.1
  */
-public class Type {
+public interface Type {
 
     /** The property. */
-    public Collection<EndeavorProperty> property;
+    Collection<EndeavorProperty> getProperty();
 
     /** The name. */
-    public String name;
+    String getName();
 
 }

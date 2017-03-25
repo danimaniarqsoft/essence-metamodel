@@ -21,21 +21,32 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.omg.essence.model.diagramInterchange;
+package org.omg.essence.model.diagraminterchange;
+
+import org.omg.essence.model.foundation.BasicElement;
 
 /**
- * The Class Node.
+ * The Class DetailCard.
  *
  * @author Daniel Cortes Pichardo
  * @version 1.1
  * @since essence 1.1
  */
-public interface Node extends DiagramElement {
+public interface DetailCard {
 
-    /** The bottom right label. */
-    Label getBottomRightLabel();
+    /** The left header side. */
+    Node getLeftHeaderSide();
 
-    /** The name. */
-    Label getName();
+    /** The footer. */
+    Label getFooter();
+
+    /** The header. */
+    Node getHeader();
+
+    /** The body. */
+    Text getBody();
+
+    /** The model element. */
+    BasicElement getModelElement();
 
 }

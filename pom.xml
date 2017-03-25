@@ -13,6 +13,12 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<sonar.maven.plugin.version>3.0.1</sonar.maven.plugin.version>
+		<!-- Sonar properties -->
+		<sonar.host.url>http://localhost:9000/</sonar.host.url>
+		<sonar.exclusions>org/binarytherapy/generated/**/*,
+			**/GuiceBindComposer.java</sonar.exclusions>
+		<sonar.dynamic>reuseReports</sonar.dynamic>
 	</properties>
 
 	<build>
@@ -74,6 +80,19 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+			<!-- Sonarqube Plugin -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>${sonar.maven.plugin.version}</version>
+				<dependencies>
+					<dependency>
+						<groupId>com.h2database</groupId>
+						<artifactId>h2</artifactId>
+						<version>1.0.60</version>
+					</dependency>
+				</dependencies>
 			</plugin>
 		</plugins>
 	</build>

@@ -94,7 +94,10 @@ public interface LanguageElement {
      */
     Collection<ViewSelection> getViewSelection();
 
-    /** The feature selection. */
+    /**
+     * The selected features, such as attributes and associations of constructs
+     * to be included in the view.
+     */
     Collection<FeatureSelection> getFeatureSelection();
 
     /** The extension. */

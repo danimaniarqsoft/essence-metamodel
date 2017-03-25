@@ -21,20 +21,30 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.omg.essence.model.diagramInterchange;
-
-import java.util.*;
+package org.omg.essence.model.diagraminterchange;
 
 /**
- * The Class Diagram.
+ * The Class Link.
  *
  * @author Daniel Cortes Pichardo
  * @version 1.1
  * @since essence 1.1
  */
-public interface Diagram {
+public interface Link extends DiagramElement {
 
-    /** The diagram element. */
-    Collection<DiagramElement> getDiagramElement();
+    /** The end 1 bounds. */
+    Label getEnd1bounds();
+
+    /** The target. */
+    Node getTarget();
+
+    /** The source. */
+    Node getSource();
+
+    /** The name. */
+    Label getName();
+
+    /** The end 2 bounds. */
+    Label getEnd2bounds();
 
 }

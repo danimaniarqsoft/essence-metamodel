@@ -114,7 +114,4 @@ public interface ElementGroup extends LanguageElement {
     /** The language elements this group owns by reference */
     Collection<LanguageElement> getReferredElements();
 
-    /** The extension. */
-    Collection<ExtensionElement> getExtension();
-
 }

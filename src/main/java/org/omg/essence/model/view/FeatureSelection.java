@@ -66,9 +66,6 @@ public interface FeatureSelection extends LanguageElement {
      */
     String getFeatureName();
 
-    /** The view selection. */
-    Collection<ViewSelection> getViewSelection();
-
     /** The construct. */
     LanguageElement getConstruct();
 

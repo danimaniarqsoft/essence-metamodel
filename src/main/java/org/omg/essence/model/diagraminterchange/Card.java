@@ -21,14 +21,32 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.omg.essence.model.diagramInterchange;
+package org.omg.essence.model.diagraminterchange;
+
+import org.omg.essence.model.foundation.*;
 
 /**
- * The Class Text.
+ * The Class Card.
  *
  * @author Daniel Cortes Pichardo
  * @version 1.1
  * @since essence 1.1
  */
-public interface Text {
+public interface Card {
+
+    /** The model element. */
+    BasicElement getModelElement();
+
+    /** The right header side. */
+    Label getRightHeaderSide();
+
+    /** The left header side. */
+    Node getLeftHeaderSide();
+
+    /** The left body side. */
+    Diagram getLeftBodySide();
+
+    /** The right body side. */
+    Text getRightBodySide();
+
 }
