@@ -36,7 +36,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-site-plugin</artifactId>
-				<version>3.4</version>
+				<version>3.6</version>
 				<configuration>
 					<skipDeploy>true</skipDeploy>
 					<locales>es,mx</locales>
@@ -85,8 +85,8 @@
 			</plugin>
 		</plugins>
 	</reporting>
-	<!-- Project information -->
 
+	<!-- Project information -->
 	<name>essence</name>
 	<url>https://github.com/danimaniarqsoft/essence-metamodel</url>
 	<inceptionYear>24/03/2017</inceptionYear>
