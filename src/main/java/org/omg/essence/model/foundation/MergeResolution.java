@@ -55,18 +55,18 @@ package org.omg.essence.model.foundation;
  * @version 1.1
  * @since essence 1.1
  */
-public class MergeResolution extends LanguageElement {
+public interface MergeResolution extends LanguageElement {
 
     /** The name of the attribute on which the conflict is solved. */
-    public String targetAttribute;
+    String getTargetAttribute();
 
     /** The name of the element on which the conflict is solved. */
-    public String targetName;
+    String getTargetName();
 
     /** The function applied to the target attribute. */
-    public String resolutionFunction;
+    String getResolutionFunction();
 
     /** The element group. */
-    public ElementGroup elementGroup;
+    ElementGroup getElementGroup();
 
 }

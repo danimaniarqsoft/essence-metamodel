@@ -52,5 +52,5 @@ package org.omg.essence.model.activityspaceandactivity;
  * @version 1.1
  * @since essence 1.1
  */
-public class EntryCriterion extends Criterion {
+public interface EntryCriterion extends Criterion {
 }

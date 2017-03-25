@@ -77,15 +77,15 @@ import org.omg.essence.model.foundation.LanguageElement;
  * @version 1.1
  * @since essence 1.1
  */
-public class ActivityAssociation extends LanguageElement {
+public interface ActivityAssociation extends LanguageElement {
 
     /** The first member of the association. */
-    public AbstractActivity end2;
+    AbstractActivity getEnd2();
 
     /** The second member of the association. */
-    public AbstractActivity end1;
+    AbstractActivity getEnd1();
 
     /** The kind of the association. */
-    public String kind;
+    String getKind();
 
 }

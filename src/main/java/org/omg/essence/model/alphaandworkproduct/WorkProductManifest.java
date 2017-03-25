@@ -60,24 +60,24 @@ import org.omg.essence.model.foundation.*;
  * @version 1.1
  * @since essence 1.1
  */
-public class WorkProductManifest extends LanguageElement {
+public interface WorkProductManifest extends LanguageElement {
 
     /**
      * Lower bound for the number of instances of the work product associated to
      * one instance of the alpha.
      */
-    public int lowerBound;
+    int getLowerBound();
 
     /**
      * Upper bound for the number of instances of the work product associated to
      * one instance of the alpha.
      */
-    public int upperBound;
+    int upperBound();
 
     /** The alpha bound by this manifest. */
-    public Alpha alpha;
+    Alpha alpha();
 
     /** The work product bound by this manifest. */
-    public WorkProduct workProduct;
+    WorkProduct workProduct();
 
 }

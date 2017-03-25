@@ -65,7 +65,7 @@ package org.omg.essence.model.foundation;
  * @version 1.1
  * @since essence 1.1
  */
-public class Method extends ElementGroup {
+public interface Method extends ElementGroup {
 
     /**
      * The purpose of this Method. The content of this attribute should be an
@@ -73,9 +73,9 @@ public class Method extends ElementGroup {
      * Additional explanations can be given in the attribute “description”
      * inherited from “ElementGroup”.
      */
-    public String purpose;
+    String getPurpose();
 
     /** The Kernel this Method is based on */
-    public Kernel baseKernel;
+    Kernel getBaseKernel();
 
 }

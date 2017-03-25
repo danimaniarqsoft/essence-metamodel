@@ -55,9 +55,9 @@ import org.omg.essence.model.foundation.*;
  * @version 1.1
  * @since essence 1.1
  */
-public class TypedResource extends Resource {
+public interface TypedResource extends Resource {
 
     /** The user defined type associated with this resource. */
-    public UserDefinedType kind;
+    UserDefinedType getKind();
 
 }

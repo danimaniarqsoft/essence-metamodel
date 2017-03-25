@@ -23,7 +23,7 @@
  */
 package org.omg.essence.model.diagramInterchange;
 
-import org.omg.essence.model.foundation.*;
+import org.omg.essence.model.foundation.BasicElement;
 
 /**
  * The Class DetailCard.
@@ -32,21 +32,21 @@ import org.omg.essence.model.foundation.*;
  * @version 1.1
  * @since essence 1.1
  */
-public class DetailCard {
+public interface DetailCard {
 
     /** The left header side. */
-    public Node leftHeaderSide;
-    
+    Node getLeftHeaderSide();
+
     /** The footer. */
-    public Label footer;
-    
+    Label getFooter();
+
     /** The header. */
-    public Node header;
-    
+    Node getHeader();
+
     /** The body. */
-    public Text body;
-    
+    Text getBody();
+
     /** The model element. */
-    public BasicElement modelElement;
+    BasicElement getModelElement();
 
 }

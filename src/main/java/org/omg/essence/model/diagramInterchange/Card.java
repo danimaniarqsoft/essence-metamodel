@@ -32,21 +32,21 @@ import org.omg.essence.model.foundation.*;
  * @version 1.1
  * @since essence 1.1
  */
-public class Card {
+public interface Card {
 
     /** The model element. */
-    public BasicElement modelElement;
-    
+    BasicElement getModelElement();
+
     /** The right header side. */
-    public Label rightHeaderSide;
-    
+    Label getRightHeaderSide();
+
     /** The left header side. */
-    public Node leftHeaderSide;
-    
+    Node getLeftHeaderSide();
+
     /** The left body side. */
-    public Diagram leftBodySide;
-    
+    Diagram getLeftBodySide();
+
     /** The right body side. */
-    public Text rightBodySide;
+    Text getRightBodySide();
 
 }

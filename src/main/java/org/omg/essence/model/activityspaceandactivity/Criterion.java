@@ -47,7 +47,7 @@ import org.omg.essence.model.foundation.*;
  * levelOfDetail<> null)
  * }
  * </pre>
- *  
+ * 
  * <pre>
  * 
  * <b>Semantics:</b>
@@ -63,18 +63,18 @@ import org.omg.essence.model.foundation.*;
  * @version 1.1
  * @since essence 1.1
  */
-public abstract class Criterion extends LanguageElement {
+public interface Criterion extends LanguageElement {
 
     /** The activity. */
-    public AbstractActivity activity;
+    AbstractActivity getActivity();
 
     /** A state to be reached. */
-    public State state;
+    State getState();
 
     /** A level of detail to be reached. */
-    public LevelOfDetail levelOfDetail;
+    LevelOfDetail getLevelOfDetail();
 
     /** The description of the Criterion */
-    public String description;
+    String getDescription();
 
 }

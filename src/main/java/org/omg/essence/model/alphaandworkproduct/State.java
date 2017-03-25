@@ -72,27 +72,26 @@ import java.util.*;
  * @version 1.1
  * @since essence 1.1
  */
-public class State extends LanguageElement {
+public interface State extends LanguageElement {
 
     /** The name of the state. */
-    public String name;
+    String getName();
 
     /** Some additional information about the state. */
-    public String description;
+    String getDescription();
 
     /** A collection of checkpoints associated with the state. */
-    public Collection<Checkpoint> checkListItem;
+    Collection<Checkpoint> getCheckListItem();
 
     /** The successor state. */
-    public State successor;
+    State getSuccessor();
 
     /** The criterion. */
-    public Collection<Criterion> criterion;
+    Collection<Criterion> getCriterion();
 
     /** The alpha. */
-    public Alpha alpha;
+    Alpha getAlpha();
 
     /** The predecessor. */
-    public State predecessor;
-
+    State getPredecessor();
 }

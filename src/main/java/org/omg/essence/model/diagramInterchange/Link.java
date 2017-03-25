@@ -30,21 +30,21 @@ package org.omg.essence.model.diagramInterchange;
  * @version 1.1
  * @since essence 1.1
  */
-public class Link extends DiagramElement {
+public interface Link extends DiagramElement {
 
     /** The end 1 bounds. */
-    public Label end1bounds;
-    
+    Label getEnd1bounds();
+
     /** The target. */
-    public Node target;
-    
+    Node getTarget();
+
     /** The source. */
-    public Node source;
-    
+    Node getSource();
+
     /** The name. */
-    public Label name;
-    
+    Label getName();
+
     /** The end 2 bounds. */
-    public Label end2bounds;
+    Label getEnd2bounds();
 
 }

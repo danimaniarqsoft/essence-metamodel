@@ -63,27 +63,27 @@ import org.omg.essence.model.foundation.LanguageElement;
  * @version 1.1
  * @since essence 1.1
  */
-public class CompetencyLevel extends LanguageElement {
+public interface CompetencyLevel extends LanguageElement {
 
     /** The name of the competency level */
-    public String name;
+    String getName();
 
     /** A short description of what the competency level is */
-    public String briefDescription;
+    String getBriefDescription();
 
     /**
      * A numeric indicator for the level, where a higher number means
      * more/better competence.
      */
-    public int level;
+    int getLevel();
 
     /** The activity. */
-    public Collection<Activity> activity;
+    Collection<Activity> getActivity();
 
     /** The competency. */
-    public Competency competency;
+    Competency getCompetency();
 
     /** The checklist item. */
-    public Collection<Checkpoint> checklistItem;
+    Collection<Checkpoint> getChecklistItem();
 
 }

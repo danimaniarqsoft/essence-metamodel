@@ -80,33 +80,33 @@ import java.util.*;
  * @version 1.1
  * @since essence 1.1
  */
-public class LevelOfDetail extends LanguageElement {
+public interface LevelOfDetail extends LanguageElement {
 
     /** A description of the level of detail. */
-    public String description;
+    String getDescription();
 
     /**
      * Boolean value determined by the practice (author) to indicate the
      * sufficient level of detail. Name of the level of detail.
      */
-    public boolean isSufficientLevel;
+    boolean isSufficientLevel();
 
     /** Name of the level of detail. */
-    public String name;
+    String getName();
 
     /** Checklist items to determine if the level of detail has been reached. */
-    public Collection<Checkpoint> checkListItem;
+    Collection<Checkpoint> getCheckListItem();
 
     /** Next level of detail. */
-    public LevelOfDetail successor;
+    LevelOfDetail getSuccessor();
 
     /** The criterion. */
-    public Collection<Criterion> criterion;
+    Collection<Criterion> getCriterion();
 
     /** The predecessor. */
-    public LevelOfDetail predecessor;
+    LevelOfDetail getPredecessor();
 
     /** The work product. */
-    public WorkProduct workProduct;
+    WorkProduct getWorkProduct();
 
 }

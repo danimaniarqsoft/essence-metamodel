@@ -56,12 +56,12 @@ import java.util.*;
  * @version 1.1
  * @since essence 1.1
  */
-public class EndeavorAssociation {
+public interface EndeavorAssociation {
 
     /** The properties of this association */
-    public Collection<EndeavorProperty> ownedEnd;
+    Collection<EndeavorProperty> getOwnedEnd();
 
     /** End properties of the association */
-    public Collection<EndeavorProperty> memberEnd;
+    Collection<EndeavorProperty> getMemberEnd();
 
 }

@@ -57,12 +57,12 @@ package org.omg.essence.model.foundation;
  * @version 1.1
  * @since essence 1.1
  */
-public class Tag extends LanguageElement {
+public interface Tag extends LanguageElement {
 
     /** The Value of the tag. */
-    public String value;
+    String getValue();
 
     /** The language element. */
-    public LanguageElement languageElement;
+    LanguageElement getLanguageElement();
 
 }

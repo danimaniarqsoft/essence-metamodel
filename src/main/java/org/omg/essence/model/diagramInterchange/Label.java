@@ -30,5 +30,5 @@ package org.omg.essence.model.diagramInterchange;
  * @version 1.1
  * @since essence 1.1
  */
-public class Label {
+public interface Label {
 }

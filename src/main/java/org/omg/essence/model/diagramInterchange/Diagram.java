@@ -32,9 +32,9 @@ import java.util.*;
  * @version 1.1
  * @since essence 1.1
  */
-public class Diagram {
+public interface Diagram {
 
     /** The diagram element. */
-    public Collection<DiagramElement> diagramElement;
+    Collection<DiagramElement> getDiagramElement();
 
 }

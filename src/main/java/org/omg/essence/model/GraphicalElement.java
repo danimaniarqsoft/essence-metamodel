@@ -30,5 +30,5 @@ package org.omg.essence.model;
  * @version 1.1
  * @since essence 1.1
  */
-public class GraphicalElement {
+public interface GraphicalElement {
 }

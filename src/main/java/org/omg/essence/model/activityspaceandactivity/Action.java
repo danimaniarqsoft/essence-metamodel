@@ -80,18 +80,18 @@ import java.util.*;
  * @version 1.1
  * @since essence 1.1
  */
-public class Action extends LanguageElement {
+public interface Action extends LanguageElement {
 
     /** The activity. */
-    public Activity activity;
+    Activity getActivity();
 
     /** The alpha. */
-    public Collection<Alpha> alpha;
+    Collection<Alpha> getAlpha();
 
     /** The work product. */
-    public Collection<WorkProduct> workProduct;
+    Collection<WorkProduct> getWorkProduct();
 
     /** The kind. */
-    public ActionKind kind;
+    ActionKind getKind();
 
 }

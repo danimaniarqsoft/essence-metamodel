@@ -55,30 +55,30 @@ package org.omg.essence.model.foundation;
  * @version 1.1
  * @since essence 1.1
  */
-public class EndeavorProperty {
+public interface EndeavorProperty {
 
     /** The language element. */
-    public LanguageElement languageElement;
+    LanguageElement getLanguageElement();
 
     /**
      * The association used to express this property if it is not a simple
      * property.
      */
-    public EndeavorAssociation association;
+    EndeavorAssociation getAssociation();
 
     /** The association owning this property */
-    public EndeavorAssociation owningAssociation;
+    EndeavorAssociation getOwningAssociation();
 
     /** The type of the property */
-    public Type type;
+    Type getType();
 
     /** Name of the property */
-    public String name;
+    String getName();
 
     /** Lower bound of the property */
-    public int lowerBound;
+    int getLowerBound();
 
     /** Upper bound of the property */
-    public int upperBound;
+    int getUpperBound();
 
 }

@@ -60,26 +60,26 @@ import org.omg.essence.model.foundation.*;
  * @version 1.1
  * @since essence 1.1
  */
-public class AlphaAssociation extends LanguageElement {
+public interface AlphaAssociation extends LanguageElement {
 
     /** Lower bound of association endpoint 1. */
-    public int end1lowerBound;
+    int getEnd1lowerBound();
 
     /** Upper bound of association endpoint 1. */
-    public int end1upperBound;
+    int getEnd1upperBound();
 
     /** Lower bound of association endpoint 2. */
-    public int end2lowerBound;
+    int getEnd2lowerBound();
 
     /** Upper bound of association endpoint 2. */
-    public int end2upperBound;
+    int getEnd2upperBound();
 
     /** Name of the alpha association. */
-    public String name;
+    String getName();
 
     /** The alpha endpoint 1 of the association. */
-    public Alpha end1;
+    Alpha getEnd1();
 
     /** The alpha endpoint 2 of the association. */
-    public Alpha end2;
+    Alpha getEnd2();
 }

@@ -129,14 +129,14 @@ import java.util.*;
  * @version 1.1
  * @since essence 1.1
  */
-public class Practice extends ElementGroup {
+public interface Practice extends ElementGroup {
 
     /**
      * Rules on the consistency of a particular Practice. The format for writing
      * these rules is out of the scope of this specification. It is recommended
      * to use either plain text or OCL.
      */
-    public String consistencyRules;
+    String getConsistencyRules();
 
     /**
      * The objective of this Practice, expressed as a concise and isolated
@@ -145,24 +145,24 @@ public class Practice extends ElementGroup {
      * explanations can be given in the attribute “description” inherited from
      * “ElementGroup”.
      */
-    public String objective;
+    String getObjective();
 
     /**
      * List of standard units used to evaluate the practice performance and the
      * objectives’ achievement.
      */
-    public Collection<String> measures;
+    Collection<String> getMeasures();
 
     /**
      * Expected characteristics of elements needed to start the execution of a
      * practice.
      */
-    public Collection<String> entry;
+    Collection<String> getEntry();
 
     /**
      * Expected characteristics of elements required as outputs after the
      * execution a practice is completed.
      */
-    public Collection<String> result;
+    Collection<String> getResult();
 
 }

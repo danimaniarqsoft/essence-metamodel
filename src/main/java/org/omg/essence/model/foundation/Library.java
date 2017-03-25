@@ -62,5 +62,5 @@ package org.omg.essence.model.foundation;
  * @version 1.1
  * @since essence 1.1
  */
-public class Library extends ElementGroup {
+public interface Library extends ElementGroup {
 }

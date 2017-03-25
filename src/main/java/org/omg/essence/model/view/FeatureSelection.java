@@ -58,18 +58,18 @@ import org.omg.essence.model.foundation.*;
  * @version 1.1
  * @since essence 1.1
  */
-public class FeatureSelection extends LanguageElement {
+public interface FeatureSelection extends LanguageElement {
 
     /**
      * The feature name. The name of the referred feature, such as the name of
      * an attribute or the role name of an association.
      */
-    public String featureName;
+    String getFeatureName();
 
     /** The view selection. */
-    public Collection<ViewSelection> viewSelection;
+    Collection<ViewSelection> getViewSelection();
 
     /** The construct. */
-    public LanguageElement construct;
+    LanguageElement getConstruct();
 
 }

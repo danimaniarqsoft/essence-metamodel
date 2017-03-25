@@ -23,7 +23,6 @@
  */
 package org.omg.essence.model;
 
-
 /**
  * The Class QName.
  *
@@ -31,5 +30,5 @@ package org.omg.essence.model;
  * @version 1.1
  * @since essence 1.1
  */
-public class QName {
+public interface QName {
 }

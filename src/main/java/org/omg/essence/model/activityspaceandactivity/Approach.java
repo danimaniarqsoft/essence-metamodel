@@ -55,17 +55,17 @@ import org.omg.essence.model.foundation.LanguageElement;
  * @version 1.1
  * @since essence 1.1
  */
-public class Approach extends LanguageElement {
+public interface Approach extends LanguageElement {
 
     /** The activity */
-    public Activity activity;
+    Activity getActivity();
 
     /** The name of the Approach */
-    public String name;
+    String getName();
 
     /**
      * Contains the detailed description or definition of the Approach.
      */
-    public String description;
+    String getDescription();
 
 }

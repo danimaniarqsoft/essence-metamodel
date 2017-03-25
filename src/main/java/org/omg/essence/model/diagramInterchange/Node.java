@@ -30,12 +30,12 @@ package org.omg.essence.model.diagramInterchange;
  * @version 1.1
  * @since essence 1.1
  */
-public class Node extends DiagramElement {
+public interface Node extends DiagramElement {
 
     /** The bottom right label. */
-    public Label bottomRightLabel;
-    
+    Label getBottomRightLabel();
+
     /** The name. */
-    public Label name;
+    Label getName();
 
 }

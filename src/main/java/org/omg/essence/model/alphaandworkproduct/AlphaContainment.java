@@ -59,18 +59,18 @@ import org.omg.essence.model.foundation.*;
  * @version 1.1
  * @since essence 1.1
  */
-public class AlphaContainment extends LanguageElement {
+public interface AlphaContainment extends LanguageElement {
 
     /** Lower bound for the number of instances of the sub(ordinate)-alpha. */
-    public int lowerBound;
+    int getLowerBound();
 
     /** Upper bound for the number of instances of the sub(ordinate)-alpha. */
-    public int upperBound;
+    int getUpperBound();
 
     /** The super alpha */
-    public Alpha superAlpha;
+    Alpha getSuperAlpha();
 
     /** The subordinate alpha. */
-    public Alpha subordinateAlpha;
+    Alpha getSubordinateAlpha();
 
 }

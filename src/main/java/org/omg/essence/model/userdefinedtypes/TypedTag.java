@@ -55,9 +55,9 @@ import org.omg.essence.model.foundation.Tag;
  * @version 1.1
  * @since essence 1.1
  */
-public class TypedTag extends Tag {
+public interface TypedTag extends Tag {
 
     /** The user defined type associated with this tag. */
-    public UserDefinedType kind;
+    UserDefinedType getKind();
 
 }

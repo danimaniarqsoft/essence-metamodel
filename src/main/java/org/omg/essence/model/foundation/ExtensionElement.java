@@ -56,18 +56,18 @@ package org.omg.essence.model.foundation;
  * @version 1.1
  * @since essence 1.1
  */
-public class ExtensionElement extends LanguageElement {
+public interface ExtensionElement extends LanguageElement {
 
     /** The element group. */
-    public ElementGroup elementGroup;
+    ElementGroup getElementGroup();
 
     /** The element to be extended */
-    public LanguageElement targetElement;
+    LanguageElement getTargetElement();
 
     /** The name of the attribute which is to be extended */
-    public String targetAttribute;
+    String getTargetAttribute();
 
     /** The function applied to the target attribute */
-    public String extensionFunction;
+    String getExtensionFunction();
 
 }

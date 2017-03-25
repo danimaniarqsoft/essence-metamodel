@@ -62,9 +62,9 @@ import java.util.*;
  * @version 1.1
  * @since essence 1.1
  */
-public class Pattern extends BasicElement {
+public interface Pattern extends BasicElement {
 
     /** Named association types between elements */
-    public Collection<PatternAssociation> association;
+    Collection<PatternAssociation> getAssociation();
 
 }

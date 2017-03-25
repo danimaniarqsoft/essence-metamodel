@@ -63,27 +63,27 @@ import org.omg.essence.model.foundation.*;
  * @version 1.1
  * @since essence 1.1
  */
-public class UserDefinedType extends LanguageElement {
+public interface UserDefinedType extends LanguageElement {
 
     /** The name of the type. */
-    public String name;
+    String getName();
 
     /** A short description of what the type is about. */
-    public String description;
+    String getDescription();
 
     /**
      * Rules that apply to all constructs using this type. It is recommended to
      * use either plain text or OCL.
      */
-    public String constraint;
+    String getConstraint();
 
     /** The typed resource. */
-    public Collection<TypedResource> typedResource;
+    Collection<TypedResource> getTypedResource();
 
     /** The typed pattern. */
-    public Collection<TypedPattern> typedPattern;
+    Collection<TypedPattern> getTypedPattern();
 
     /** The typed tag. */
-    public Collection<TypedTag> typedTag;
+    Collection<TypedTag> getTypedTag();
 
 }

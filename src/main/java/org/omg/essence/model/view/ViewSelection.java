@@ -60,34 +60,34 @@ import org.omg.essence.model.foundation.*;
  * @version 1.1
  * @since essence 1.1
  */
-public class ViewSelection extends LanguageElement {
+public interface ViewSelection extends LanguageElement {
 
     /** The name of the view. */
-    public String name;
+    String getName();
 
     /** A description of the view, including the purpose of the view. */
-    public String description;
+    String getDescription();
 
     /** The referring view selection. */
-    public Collection<ViewSelection> referringViewSelection;
+    Collection<ViewSelection> getReferringViewSelection();
 
     /**
      * The selected constructs (such as Alpha, State, etc) to be included in the
      * view.
      */
-    public Collection<LanguageElement> constructSelection;
+    Collection<LanguageElement> getConstructSelection();
 
     /**
      * ViewSelections to be included in this ViewSelection (provides a means to
      * build extended and more sophisticated views based on existing/smaller
      * views)
      */
-    public Collection<ViewSelection> includedViewSelection;
+    Collection<ViewSelection> getIncludedViewSelection();
 
     /**
      * The selected features, such as attributes and associations of constructs
      * to be included in the view.
      */
-    public Collection<FeatureSelection> featureSelection;
+    Collection<FeatureSelection> getFeatureSelection();
 
 }

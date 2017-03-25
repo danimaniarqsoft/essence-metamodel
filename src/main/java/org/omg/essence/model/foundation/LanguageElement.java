@@ -65,45 +65,45 @@ import org.omg.essence.model.view.*;
  * @version 1.1
  * @since essence 1.1
  */
-public abstract class LanguageElement {
+public interface LanguageElement {
 
     /**
      * A flag indicating whether this element may be suppressed in an extension
      * or composition (see 9.4.3.2 on the essence standard)
      */
-    public boolean isSuppressable = true;
+    boolean isSuppressable();
 
     /** The element group that owns this language element */
-    public ElementGroup owner;
+    ElementGroup getOwner();
 
     /** Tags associated with this language element */
-    public Collection<Tag> tag;
+    Collection<Tag> getTag();
 
     /** Resources associated with this language element. */
-    public Collection<Resource> resource;
+    Collection<Resource> getResource();
 
     /**
      * Properties (defined at M1 level) that you want to track during the
      * endeavor.
      */
-    public Collection<EndeavorProperty> properties;
+    Collection<EndeavorProperty> getProperties();
 
     /**
      * A list of ViewSelection selects a subset of constructs and construct
      * features such as attributes and associations.
      */
-    public Collection<ViewSelection> viewSelection;
+    Collection<ViewSelection> getViewSelection();
 
     /** The feature selection. */
-    public Collection<FeatureSelection> featureSelection;
+    Collection<FeatureSelection> getFeatureSelection();
 
     /** The extension. */
-    public Collection<ExtensionElement> extension;
+    Collection<ExtensionElement> getExtension();
 
     /** The referrer. */
-    public Collection<ElementGroup> referrer;
+    Collection<ElementGroup> getReferrer();
 
     /** The pattern association. */
-    public Collection<PatternAssociation> patternAssociation;
+    Collection<PatternAssociation> getPatternAssociation();
 
 }

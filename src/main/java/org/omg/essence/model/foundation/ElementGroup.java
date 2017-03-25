@@ -81,13 +81,13 @@ import org.omg.essence.model.GraphicalElement;
  * @since essence 1.1
  * 
  */
-public abstract class ElementGroup extends LanguageElement {
+public interface ElementGroup extends LanguageElement {
 
     /** The name of the element group */
-    public String name;
+    String getName();
 
     /** The icon to be used when presenting the element group */
-    public GraphicalElement icon;
+    GraphicalElement getIcon();
 
     /**
      * A short description of what the group is. It is discoraged to use rich
@@ -95,7 +95,7 @@ public abstract class ElementGroup extends LanguageElement {
      * description. The content of this attribute should be a summary of the
      * content given in attribute "description".
      */
-    public String briefDescription;
+    String getBriefDescription();
 
     /**
      * A more detailed description of the group. The content of this attribute
@@ -103,18 +103,18 @@ public abstract class ElementGroup extends LanguageElement {
      * may include section headings, formatting information, hyperlinks, or
      * similar to ease structured reading and navigation.
      */
-    public String description;
+    String getDescription();
 
     /** The merge resolution. */
-    public Collection<MergeResolution> mergeResolution;
+    Collection<MergeResolution> getMergeResolution();
 
     /** The language elements this group owns by value */
-    public Collection<LanguageElement> ownedElements;
+    Collection<LanguageElement> getOwnedElements();
 
     /** The language elements this group owns by reference */
-    public Collection<LanguageElement> referredElements;
+    Collection<LanguageElement> getReferredElements();
 
     /** The extension. */
-    public Collection<ExtensionElement> extension;
+    Collection<ExtensionElement> getExtension();
 
 }
