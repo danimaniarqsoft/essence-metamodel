@@ -71,39 +71,119 @@ public abstract class LanguageElement {
      * A flag indicating whether this element may be suppressed in an extension
      * or composition (see 9.4.3.2 on the essence standard)
      */
-    public boolean isSuppressable = true;
+    private boolean isSuppressable = true;
 
     /** The element group that owns this language element */
-    public ElementGroup owner;
+    private ElementGroup owner;
 
     /** Tags associated with this language element */
-    public Collection<Tag> tag;
+    private Collection<Tag> tag;
 
     /** Resources associated with this language element. */
-    public Collection<Resource> resource;
+    private Collection<Resource> resource;
 
     /**
      * Properties (defined at M1 level) that you want to track during the
      * endeavor.
      */
-    public Collection<EndeavorProperty> properties;
+    private Collection<EndeavorProperty> properties;
 
     /**
      * A list of ViewSelection selects a subset of constructs and construct
      * features such as attributes and associations.
      */
-    public Collection<ViewSelection> viewSelection;
+    private Collection<ViewSelection> viewSelection;
 
     /** The feature selection. */
-    public Collection<FeatureSelection> featureSelection;
+    private Collection<FeatureSelection> featureSelection;
 
     /** The extension. */
-    public Collection<ExtensionElement> extension;
+    private Collection<ExtensionElement> extension;
 
     /** The referrer. */
-    public Collection<ElementGroup> referrer;
+    private Collection<ElementGroup> referrer;
 
     /** The pattern association. */
-    public Collection<PatternAssociation> patternAssociation;
+    private Collection<PatternAssociation> patternAssociation;
+
+    public boolean isSuppressable() {
+        return isSuppressable;
+    }
+
+    public void setSuppressable(boolean isSuppressable) {
+        this.isSuppressable = isSuppressable;
+    }
+
+    public ElementGroup getOwner() {
+        return owner;
+    }
+
+    public void setOwner(ElementGroup owner) {
+        this.owner = owner;
+    }
+
+    public Collection<Tag> getTag() {
+        return tag;
+    }
+
+    public void setTag(Collection<Tag> tag) {
+        this.tag = tag;
+    }
+
+    public Collection<Resource> getResource() {
+        return resource;
+    }
+
+    public void setResource(Collection<Resource> resource) {
+        this.resource = resource;
+    }
+
+    public Collection<EndeavorProperty> getProperties() {
+        return properties;
+    }
+
+    public void setProperties(Collection<EndeavorProperty> properties) {
+        this.properties = properties;
+    }
+
+    public Collection<ViewSelection> getViewSelection() {
+        return viewSelection;
+    }
+
+    public void setViewSelection(Collection<ViewSelection> viewSelection) {
+        this.viewSelection = viewSelection;
+    }
+
+    public Collection<FeatureSelection> getFeatureSelection() {
+        return featureSelection;
+    }
+
+    public void setFeatureSelection(Collection<FeatureSelection> featureSelection) {
+        this.featureSelection = featureSelection;
+    }
+
+    public Collection<ExtensionElement> getExtension() {
+        return extension;
+    }
+
+    public void setExtension(Collection<ExtensionElement> extension) {
+        this.extension = extension;
+    }
+
+    public Collection<ElementGroup> getReferrer() {
+        return referrer;
+    }
+
+    public void setReferrer(Collection<ElementGroup> referrer) {
+        this.referrer = referrer;
+    }
+
+    public Collection<PatternAssociation> getPatternAssociation() {
+        return patternAssociation;
+    }
+
+    public void setPatternAssociation(Collection<PatternAssociation> patternAssociation) {
+        this.patternAssociation = patternAssociation;
+    }
 
 }

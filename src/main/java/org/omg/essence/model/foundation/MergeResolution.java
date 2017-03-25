@@ -58,15 +58,47 @@ package org.omg.essence.model.foundation;
 public class MergeResolution extends LanguageElement {
 
     /** The name of the attribute on which the conflict is solved. */
-    public String targetAttribute;
+    private String targetAttribute;
 
     /** The name of the element on which the conflict is solved. */
-    public String targetName;
+    private String targetName;
 
     /** The function applied to the target attribute. */
-    public String resolutionFunction;
+    private String resolutionFunction;
 
     /** The element group. */
-    public ElementGroup elementGroup;
+    private ElementGroup elementGroup;
+
+    public String getTargetAttribute() {
+        return targetAttribute;
+    }
+
+    public void setTargetAttribute(String targetAttribute) {
+        this.targetAttribute = targetAttribute;
+    }
+
+    public String getTargetName() {
+        return targetName;
+    }
+
+    public void setTargetName(String targetName) {
+        this.targetName = targetName;
+    }
+
+    public String getResolutionFunction() {
+        return resolutionFunction;
+    }
+
+    public void setResolutionFunction(String resolutionFunction) {
+        this.resolutionFunction = resolutionFunction;
+    }
+
+    public ElementGroup getElementGroup() {
+        return elementGroup;
+    }
+
+    public void setElementGroup(ElementGroup elementGroup) {
+        this.elementGroup = elementGroup;
+    }
 
 }

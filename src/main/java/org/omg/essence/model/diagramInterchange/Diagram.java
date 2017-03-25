@@ -35,6 +35,14 @@ import java.util.*;
 public class Diagram {
 
     /** The diagram element. */
-    public Collection<DiagramElement> diagramElement;
+    private Collection<DiagramElement> diagramElement;
+
+    public Collection<DiagramElement> getDiagramElement() {
+        return diagramElement;
+    }
+
+    public void setDiagramElement(Collection<DiagramElement> diagramElement) {
+        this.diagramElement = diagramElement;
+    }
 
 }

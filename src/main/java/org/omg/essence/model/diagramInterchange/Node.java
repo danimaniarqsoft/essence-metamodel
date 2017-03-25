@@ -33,9 +33,25 @@ package org.omg.essence.model.diagramInterchange;
 public class Node extends DiagramElement {
 
     /** The bottom right label. */
-    public Label bottomRightLabel;
+    private Label bottomRightLabel;
     
     /** The name. */
-    public Label name;
+    private Label name;
+
+    public Label getBottomRightLabel() {
+        return bottomRightLabel;
+    }
+
+    public void setBottomRightLabel(Label bottomRightLabel) {
+        this.bottomRightLabel = bottomRightLabel;
+    }
+
+    public Label getName() {
+        return name;
+    }
+
+    public void setName(Label name) {
+        this.name = name;
+    }
 
 }

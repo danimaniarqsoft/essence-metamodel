@@ -66,15 +66,47 @@ import org.omg.essence.model.foundation.*;
 public abstract class Criterion extends LanguageElement {
 
     /** The activity. */
-    public AbstractActivity activity;
+    private AbstractActivity activity;
 
     /** A state to be reached. */
-    public State state;
+    private State state;
 
     /** A level of detail to be reached. */
-    public LevelOfDetail levelOfDetail;
+    private LevelOfDetail levelOfDetail;
 
     /** The description of the Criterion */
-    public String description;
+    private String description;
+
+    public AbstractActivity getActivity() {
+        return activity;
+    }
+
+    public void setActivity(AbstractActivity activity) {
+        this.activity = activity;
+    }
+
+    public State getState() {
+        return state;
+    }
+
+    public void setState(State state) {
+        this.state = state;
+    }
+
+    public LevelOfDetail getLevelOfDetail() {
+        return levelOfDetail;
+    }
+
+    public void setLevelOfDetail(LevelOfDetail levelOfDetail) {
+        this.levelOfDetail = levelOfDetail;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
 }

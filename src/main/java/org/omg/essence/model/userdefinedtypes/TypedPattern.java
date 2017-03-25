@@ -58,6 +58,14 @@ import org.omg.essence.model.foundation.*;
 public class TypedPattern extends Pattern {
 
     /** The user defined type associated with this pattern */
-    public UserDefinedType kind;
+    private  UserDefinedType kind;
+
+    public UserDefinedType getKind() {
+        return kind;
+    }
+
+    public void setKind(UserDefinedType kind) {
+        this.kind = kind;
+    }
 
 }

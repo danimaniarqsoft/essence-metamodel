@@ -33,18 +33,58 @@ package org.omg.essence.model.diagramInterchange;
 public class Link extends DiagramElement {
 
     /** The end 1 bounds. */
-    public Label end1bounds;
+    private Label end1bounds;
     
     /** The target. */
-    public Node target;
+    private Node target;
     
     /** The source. */
-    public Node source;
+    private Node source;
     
     /** The name. */
-    public Label name;
+    private Label name;
     
     /** The end 2 bounds. */
-    public Label end2bounds;
+    private Label end2bounds;
+
+    public Label getEnd1bounds() {
+        return end1bounds;
+    }
+
+    public void setEnd1bounds(Label end1bounds) {
+        this.end1bounds = end1bounds;
+    }
+
+    public Node getTarget() {
+        return target;
+    }
+
+    public void setTarget(Node target) {
+        this.target = target;
+    }
+
+    public Node getSource() {
+        return source;
+    }
+
+    public void setSource(Node source) {
+        this.source = source;
+    }
+
+    public Label getName() {
+        return name;
+    }
+
+    public void setName(Label name) {
+        this.name = name;
+    }
+
+    public Label getEnd2bounds() {
+        return end2bounds;
+    }
+
+    public void setEnd2bounds(Label end2bounds) {
+        this.end2bounds = end2bounds;
+    }
 
 }

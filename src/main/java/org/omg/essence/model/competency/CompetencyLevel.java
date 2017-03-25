@@ -66,24 +66,72 @@ import org.omg.essence.model.foundation.LanguageElement;
 public class CompetencyLevel extends LanguageElement {
 
     /** The name of the competency level */
-    public String name;
+    private String name;
 
     /** A short description of what the competency level is */
-    public String briefDescription;
+    private String briefDescription;
 
     /**
      * A numeric indicator for the level, where a higher number means
      * more/better competence.
      */
-    public int level;
+    private int level;
 
     /** The activity. */
-    public Collection<Activity> activity;
+    private Collection<Activity> activity;
 
     /** The competency. */
-    public Competency competency;
+    private Competency competency;
 
     /** The checklist item. */
-    public Collection<Checkpoint> checklistItem;
+    private Collection<Checkpoint> checklistItem;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getBriefDescription() {
+        return briefDescription;
+    }
+
+    public void setBriefDescription(String briefDescription) {
+        this.briefDescription = briefDescription;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    public Collection<Activity> getActivity() {
+        return activity;
+    }
+
+    public void setActivity(Collection<Activity> activity) {
+        this.activity = activity;
+    }
+
+    public Competency getCompetency() {
+        return competency;
+    }
+
+    public void setCompetency(Competency competency) {
+        this.competency = competency;
+    }
+
+    public Collection<Checkpoint> getChecklistItem() {
+        return checklistItem;
+    }
+
+    public void setChecklistItem(Collection<Checkpoint> checklistItem) {
+        this.checklistItem = checklistItem;
+    }
 
 }

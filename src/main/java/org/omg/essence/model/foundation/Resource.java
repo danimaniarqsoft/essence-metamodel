@@ -65,9 +65,25 @@ public class Resource extends LanguageElement {
      * A reference to the content of the resource. The reference can be provided
      * in any suitable way, e.g., as a hyperlink or as a full text document.
      */
-    public String content;
+    private String content;
 
     /** The language element */
-    public LanguageElement languageElement;
+    private LanguageElement languageElement;
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public LanguageElement getLanguageElement() {
+        return languageElement;
+    }
+
+    public void setLanguageElement(LanguageElement languageElement) {
+        this.languageElement = languageElement;
+    }
 
 }

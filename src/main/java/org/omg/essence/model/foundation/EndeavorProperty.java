@@ -58,27 +58,83 @@ package org.omg.essence.model.foundation;
 public class EndeavorProperty {
 
     /** The language element. */
-    public LanguageElement languageElement;
+    private LanguageElement languageElement;
 
     /**
      * The association used to express this property if it is not a simple
      * property.
      */
-    public EndeavorAssociation association;
+    private EndeavorAssociation association;
 
     /** The association owning this property */
-    public EndeavorAssociation owningAssociation;
+    private EndeavorAssociation owningAssociation;
 
     /** The type of the property */
-    public Type type;
+    private Type type;
 
     /** Name of the property */
-    public String name;
+    private String name;
 
     /** Lower bound of the property */
-    public int lowerBound;
+    private int lowerBound;
 
     /** Upper bound of the property */
-    public int upperBound;
+    private int upperBound;
+
+    public LanguageElement getLanguageElement() {
+        return languageElement;
+    }
+
+    public void setLanguageElement(LanguageElement languageElement) {
+        this.languageElement = languageElement;
+    }
+
+    public EndeavorAssociation getAssociation() {
+        return association;
+    }
+
+    public void setAssociation(EndeavorAssociation association) {
+        this.association = association;
+    }
+
+    public EndeavorAssociation getOwningAssociation() {
+        return owningAssociation;
+    }
+
+    public void setOwningAssociation(EndeavorAssociation owningAssociation) {
+        this.owningAssociation = owningAssociation;
+    }
+
+    public Type getType() {
+        return type;
+    }
+
+    public void setType(Type type) {
+        this.type = type;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getLowerBound() {
+        return lowerBound;
+    }
+
+    public void setLowerBound(int lowerBound) {
+        this.lowerBound = lowerBound;
+    }
+
+    public int getUpperBound() {
+        return upperBound;
+    }
+
+    public void setUpperBound(int upperBound) {
+        this.upperBound = upperBound;
+    }
 
 }

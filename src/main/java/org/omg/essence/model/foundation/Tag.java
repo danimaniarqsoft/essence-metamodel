@@ -60,9 +60,25 @@ package org.omg.essence.model.foundation;
 public class Tag extends LanguageElement {
 
     /** The Value of the tag. */
-    public String value;
+    private String value;
 
     /** The language element. */
-    public LanguageElement languageElement;
+    private LanguageElement languageElement;
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+
+    public LanguageElement getLanguageElement() {
+        return languageElement;
+    }
+
+    public void setLanguageElement(LanguageElement languageElement) {
+        this.languageElement = languageElement;
+    }
 
 }

@@ -75,12 +75,36 @@ import java.util.*;
 public class WorkProduct extends BasicElement {
 
     /** The level of details defined for the work product. */
-    public Collection<LevelOfDetail> levelOfDetail;
+    private Collection<LevelOfDetail> levelOfDetail;
 
     /** The action. */
-    public Collection<Action> action;
+    private Collection<Action> action;
 
     /** The work product manifest. */
-    public Collection<WorkProductManifest> workProductManifest;
+    private Collection<WorkProductManifest> workProductManifest;
+
+    public Collection<LevelOfDetail> getLevelOfDetail() {
+        return levelOfDetail;
+    }
+
+    public void setLevelOfDetail(Collection<LevelOfDetail> levelOfDetail) {
+        this.levelOfDetail = levelOfDetail;
+    }
+
+    public Collection<Action> getAction() {
+        return action;
+    }
+
+    public void setAction(Collection<Action> action) {
+        this.action = action;
+    }
+
+    public Collection<WorkProductManifest> getWorkProductManifest() {
+        return workProductManifest;
+    }
+
+    public void setWorkProductManifest(Collection<WorkProductManifest> workProductManifest) {
+        this.workProductManifest = workProductManifest;
+    }
 
 }

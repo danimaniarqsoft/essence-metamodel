@@ -59,9 +59,25 @@ import java.util.*;
 public class EndeavorAssociation {
 
     /** The properties of this association */
-    public Collection<EndeavorProperty> ownedEnd;
+    private Collection<EndeavorProperty> ownedEnd;
 
     /** End properties of the association */
-    public Collection<EndeavorProperty> memberEnd;
+    private Collection<EndeavorProperty> memberEnd;
+
+    public Collection<EndeavorProperty> getOwnedEnd() {
+        return ownedEnd;
+    }
+
+    public void setOwnedEnd(Collection<EndeavorProperty> ownedEnd) {
+        this.ownedEnd = ownedEnd;
+    }
+
+    public Collection<EndeavorProperty> getMemberEnd() {
+        return memberEnd;
+    }
+
+    public void setMemberEnd(Collection<EndeavorProperty> memberEnd) {
+        this.memberEnd = memberEnd;
+    }
 
 }

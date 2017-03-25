@@ -65,12 +65,36 @@ import java.util.Collection;
 public class PatternAssociation extends LanguageElement {
 
     /** Name of the association. */
-    public String name;
+    private String name;
 
     /** The elements taking part in the pattern via this association */
-    public Collection<LanguageElement> elements;
+    private Collection<LanguageElement> elements;
 
     /** The pattern. */
-    public Pattern pattern;
+    private Pattern pattern;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Collection<LanguageElement> getElements() {
+        return elements;
+    }
+
+    public void setElements(Collection<LanguageElement> elements) {
+        this.elements = elements;
+    }
+
+    public Pattern getPattern() {
+        return pattern;
+    }
+
+    public void setPattern(Pattern pattern) {
+        this.pattern = pattern;
+    }
 
 }

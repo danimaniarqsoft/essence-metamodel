@@ -97,21 +97,69 @@ import java.util.*;
 public class Alpha extends BasicElement {
 
     /** The states of the alpha. */
-    public Collection<State> states;
+    private Collection<State> states;
 
     /** The action. */
-    public Collection<Action> action;
+    private Collection<Action> action;
 
     /** The activity space. */
-    public ActivitySpace activitySpace;
+    private ActivitySpace activitySpace;
 
     /** The alpha containment. */
-    public Collection<AlphaContainment> alphaContainment;
+    private Collection<AlphaContainment> alphaContainment;
 
     /** The alpha association. */
-    public Collection<AlphaAssociation> alphaAssociation;
+    private Collection<AlphaAssociation> alphaAssociation;
 
     /** The work product manifest. */
-    public Collection<WorkProductManifest> workProductManifest;
+    private Collection<WorkProductManifest> workProductManifest;
+
+    public Collection<State> getStates() {
+        return states;
+    }
+
+    public void setStates(Collection<State> states) {
+        this.states = states;
+    }
+
+    public Collection<Action> getAction() {
+        return action;
+    }
+
+    public void setAction(Collection<Action> action) {
+        this.action = action;
+    }
+
+    public ActivitySpace getActivitySpace() {
+        return activitySpace;
+    }
+
+    public void setActivitySpace(ActivitySpace activitySpace) {
+        this.activitySpace = activitySpace;
+    }
+
+    public Collection<AlphaContainment> getAlphaContainment() {
+        return alphaContainment;
+    }
+
+    public void setAlphaContainment(Collection<AlphaContainment> alphaContainment) {
+        this.alphaContainment = alphaContainment;
+    }
+
+    public Collection<AlphaAssociation> getAlphaAssociation() {
+        return alphaAssociation;
+    }
+
+    public void setAlphaAssociation(Collection<AlphaAssociation> alphaAssociation) {
+        this.alphaAssociation = alphaAssociation;
+    }
+
+    public Collection<WorkProductManifest> getWorkProductManifest() {
+        return workProductManifest;
+    }
+
+    public void setWorkProductManifest(Collection<WorkProductManifest> workProductManifest) {
+        this.workProductManifest = workProductManifest;
+    }
 
 }

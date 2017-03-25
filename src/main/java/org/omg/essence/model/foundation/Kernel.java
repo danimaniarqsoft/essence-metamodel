@@ -91,13 +91,29 @@ import java.util.*;
 public class Kernel extends ElementGroup {
 
     /** The referring method. */
-    public Collection<Method> referringMethod;
+    private Collection<Method> referringMethod;
 
     /**
      * A set of rules on the consistency of a particular Kernel. The format for
      * writing these rules is out of the scope of this specification. It is
      * recommended to use either plain text or OCL.
      */
-    public String consistencyRules;
+    private String consistencyRules;
+
+    public Collection<Method> getReferringMethod() {
+        return referringMethod;
+    }
+
+    public void setReferringMethod(Collection<Method> referringMethod) {
+        this.referringMethod = referringMethod;
+    }
+
+    public String getConsistencyRules() {
+        return consistencyRules;
+    }
+
+    public void setConsistencyRules(String consistencyRules) {
+        this.consistencyRules = consistencyRules;
+    }
 
 }

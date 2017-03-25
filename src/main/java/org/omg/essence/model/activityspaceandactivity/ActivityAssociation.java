@@ -80,12 +80,36 @@ import org.omg.essence.model.foundation.LanguageElement;
 public class ActivityAssociation extends LanguageElement {
 
     /** The first member of the association. */
-    public AbstractActivity end2;
+    private AbstractActivity end2;
 
     /** The second member of the association. */
-    public AbstractActivity end1;
+    private AbstractActivity end1;
 
     /** The kind of the association. */
-    public String kind;
+    private String kind;
+
+    public AbstractActivity getEnd2() {
+        return end2;
+    }
+
+    public void setEnd2(AbstractActivity end2) {
+        this.end2 = end2;
+    }
+
+    public AbstractActivity getEnd1() {
+        return end1;
+    }
+
+    public void setEnd1(AbstractActivity end1) {
+        this.end1 = end1;
+    }
+
+    public String getKind() {
+        return kind;
+    }
+
+    public void setKind(String kind) {
+        this.kind = kind;
+    }
 
 }

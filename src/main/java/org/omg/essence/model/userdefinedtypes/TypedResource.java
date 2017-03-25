@@ -58,6 +58,14 @@ import org.omg.essence.model.foundation.*;
 public class TypedResource extends Resource {
 
     /** The user defined type associated with this resource. */
-    public UserDefinedType kind;
+    private UserDefinedType kind;
+
+    public UserDefinedType getKind() {
+        return kind;
+    }
+
+    public void setKind(UserDefinedType kind) {
+        this.kind = kind;
+    }
 
 }

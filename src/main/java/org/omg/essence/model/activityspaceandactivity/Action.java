@@ -23,10 +23,11 @@
  */
 package org.omg.essence.model.activityspaceandactivity;
 
-import org.omg.essence.model.alphaandworkproduct.*;
-import org.omg.essence.model.foundation.*;
+import java.util.Collection;
 
-import java.util.*;
+import org.omg.essence.model.alphaandworkproduct.Alpha;
+import org.omg.essence.model.alphaandworkproduct.WorkProduct;
+import org.omg.essence.model.foundation.LanguageElement;
 
 /**
  * <pre>
@@ -83,15 +84,47 @@ import java.util.*;
 public class Action extends LanguageElement {
 
     /** The activity. */
-    public Activity activity;
+    private Activity activity;
 
     /** The alpha. */
-    public Collection<Alpha> alpha;
+    private Collection<Alpha> alpha;
 
     /** The work product. */
-    public Collection<WorkProduct> workProduct;
+    private Collection<WorkProduct> workProduct;
 
     /** The kind. */
-    public ActionKind kind;
+    private ActionKind kind;
+
+    public Activity getActivity() {
+        return activity;
+    }
+
+    public void setActivity(Activity activity) {
+        this.activity = activity;
+    }
+
+    public Collection<Alpha> getAlpha() {
+        return alpha;
+    }
+
+    public void setAlpha(Collection<Alpha> alpha) {
+        this.alpha = alpha;
+    }
+
+    public Collection<WorkProduct> getWorkProduct() {
+        return workProduct;
+    }
+
+    public void setWorkProduct(Collection<WorkProduct> workProduct) {
+        this.workProduct = workProduct;
+    }
+
+    public ActionKind getKind() {
+        return kind;
+    }
+
+    public void setKind(ActionKind kind) {
+        this.kind = kind;
+    }
 
 }

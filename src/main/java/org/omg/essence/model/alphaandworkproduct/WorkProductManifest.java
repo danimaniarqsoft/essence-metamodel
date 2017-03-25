@@ -66,18 +66,50 @@ public class WorkProductManifest extends LanguageElement {
      * Lower bound for the number of instances of the work product associated to
      * one instance of the alpha.
      */
-    public int lowerBound;
+    private int lowerBound;
 
     /**
      * Upper bound for the number of instances of the work product associated to
      * one instance of the alpha.
      */
-    public int upperBound;
+    private int upperBound;
 
     /** The alpha bound by this manifest. */
-    public Alpha alpha;
+    private Alpha alpha;
 
     /** The work product bound by this manifest. */
-    public WorkProduct workProduct;
+    private WorkProduct workProduct;
+
+    public int getLowerBound() {
+        return lowerBound;
+    }
+
+    public void setLowerBound(int lowerBound) {
+        this.lowerBound = lowerBound;
+    }
+
+    public int getUpperBound() {
+        return upperBound;
+    }
+
+    public void setUpperBound(int upperBound) {
+        this.upperBound = upperBound;
+    }
+
+    public Alpha getAlpha() {
+        return alpha;
+    }
+
+    public void setAlpha(Alpha alpha) {
+        this.alpha = alpha;
+    }
+
+    public WorkProduct getWorkProduct() {
+        return workProduct;
+    }
+
+    public void setWorkProduct(WorkProduct workProduct) {
+        this.workProduct = workProduct;
+    }
 
 }

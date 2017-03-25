@@ -62,15 +62,47 @@ import org.omg.essence.model.foundation.*;
 public class AlphaContainment extends LanguageElement {
 
     /** Lower bound for the number of instances of the sub(ordinate)-alpha. */
-    public int lowerBound;
+    private int lowerBound;
 
     /** Upper bound for the number of instances of the sub(ordinate)-alpha. */
-    public int upperBound;
+    private int upperBound;
 
     /** The super alpha */
-    public Alpha superAlpha;
+    private Alpha superAlpha;
 
     /** The subordinate alpha. */
-    public Alpha subordinateAlpha;
+    private Alpha subordinateAlpha;
+
+    public int getLowerBound() {
+        return lowerBound;
+    }
+
+    public void setLowerBound(int lowerBound) {
+        this.lowerBound = lowerBound;
+    }
+
+    public int getUpperBound() {
+        return upperBound;
+    }
+
+    public void setUpperBound(int upperBound) {
+        this.upperBound = upperBound;
+    }
+
+    public Alpha getSuperAlpha() {
+        return superAlpha;
+    }
+
+    public void setSuperAlpha(Alpha superAlpha) {
+        this.superAlpha = superAlpha;
+    }
+
+    public Alpha getSubordinateAlpha() {
+        return subordinateAlpha;
+    }
+
+    public void setSubordinateAlpha(Alpha subordinateAlpha) {
+        this.subordinateAlpha = subordinateAlpha;
+    }
 
 }

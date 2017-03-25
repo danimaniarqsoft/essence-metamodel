@@ -83,30 +83,94 @@ import java.util.*;
 public class LevelOfDetail extends LanguageElement {
 
     /** A description of the level of detail. */
-    public String description;
+    private String description;
 
     /**
      * Boolean value determined by the practice (author) to indicate the
      * sufficient level of detail. Name of the level of detail.
      */
-    public boolean isSufficientLevel;
+    private boolean isSufficientLevel;
 
     /** Name of the level of detail. */
-    public String name;
+    private String name;
 
     /** Checklist items to determine if the level of detail has been reached. */
-    public Collection<Checkpoint> checkListItem;
+    private Collection<Checkpoint> checkListItem;
 
     /** Next level of detail. */
-    public LevelOfDetail successor;
+    private LevelOfDetail successor;
 
     /** The criterion. */
-    public Collection<Criterion> criterion;
+    private Collection<Criterion> criterion;
 
     /** The predecessor. */
-    public LevelOfDetail predecessor;
+    private LevelOfDetail predecessor;
 
     /** The work product. */
-    public WorkProduct workProduct;
+    private WorkProduct workProduct;
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public boolean isSufficientLevel() {
+        return isSufficientLevel;
+    }
+
+    public void setSufficientLevel(boolean isSufficientLevel) {
+        this.isSufficientLevel = isSufficientLevel;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Collection<Checkpoint> getCheckListItem() {
+        return checkListItem;
+    }
+
+    public void setCheckListItem(Collection<Checkpoint> checkListItem) {
+        this.checkListItem = checkListItem;
+    }
+
+    public LevelOfDetail getSuccessor() {
+        return successor;
+    }
+
+    public void setSuccessor(LevelOfDetail successor) {
+        this.successor = successor;
+    }
+
+    public Collection<Criterion> getCriterion() {
+        return criterion;
+    }
+
+    public void setCriterion(Collection<Criterion> criterion) {
+        this.criterion = criterion;
+    }
+
+    public LevelOfDetail getPredecessor() {
+        return predecessor;
+    }
+
+    public void setPredecessor(LevelOfDetail predecessor) {
+        this.predecessor = predecessor;
+    }
+
+    public WorkProduct getWorkProduct() {
+        return workProduct;
+    }
+
+    public void setWorkProduct(WorkProduct workProduct) {
+        this.workProduct = workProduct;
+    }
 
 }

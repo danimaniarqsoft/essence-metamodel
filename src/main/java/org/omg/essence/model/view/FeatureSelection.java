@@ -64,12 +64,38 @@ public class FeatureSelection extends LanguageElement {
      * The feature name. The name of the referred feature, such as the name of
      * an attribute or the role name of an association.
      */
-    public String featureName;
+    private String featureName;
 
     /** The view selection. */
-    public Collection<ViewSelection> viewSelection;
+    private Collection<ViewSelection> viewSelection;
 
     /** The construct. */
-    public LanguageElement construct;
+    private LanguageElement construct;
+
+    public String getFeatureName() {
+        return featureName;
+    }
+
+    public void setFeatureName(String featureName) {
+        this.featureName = featureName;
+    }
+
+    @Override
+    public Collection<ViewSelection> getViewSelection() {
+        return viewSelection;
+    }
+
+    @Override
+    public void setViewSelection(Collection<ViewSelection> viewSelection) {
+        this.viewSelection = viewSelection;
+    }
+
+    public LanguageElement getConstruct() {
+        return construct;
+    }
+
+    public void setConstruct(LanguageElement construct) {
+        this.construct = construct;
+    }
 
 }

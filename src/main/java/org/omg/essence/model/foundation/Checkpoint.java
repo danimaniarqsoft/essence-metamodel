@@ -66,21 +66,69 @@ import org.omg.essence.model.competency.*;
 public class Checkpoint extends LanguageElement {
 
     /** The name of the checkpoint. */
-    public String name;
+    private String name;
 
     /** A description of the checkpoint. */
-    public String description;
+    private String description;
 
     /** An optional abbreviated version of the full description. */
-    public String shortDescription;
+    private String shortDescription;
 
     /** The level. */
-    public LevelOfDetail level;
+    private LevelOfDetail level;
 
     /** The state. */
-    public State state;
+    private State state;
 
     /** The competency level. */
-    public CompetencyLevel competencyLevel;
+    private CompetencyLevel competencyLevel;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getShortDescription() {
+        return shortDescription;
+    }
+
+    public void setShortDescription(String shortDescription) {
+        this.shortDescription = shortDescription;
+    }
+
+    public LevelOfDetail getLevel() {
+        return level;
+    }
+
+    public void setLevel(LevelOfDetail level) {
+        this.level = level;
+    }
+
+    public State getState() {
+        return state;
+    }
+
+    public void setState(State state) {
+        this.state = state;
+    }
+
+    public CompetencyLevel getCompetencyLevel() {
+        return competencyLevel;
+    }
+
+    public void setCompetencyLevel(CompetencyLevel competencyLevel) {
+        this.competencyLevel = competencyLevel;
+    }
 
 }

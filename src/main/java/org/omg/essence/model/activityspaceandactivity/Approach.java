@@ -58,14 +58,38 @@ import org.omg.essence.model.foundation.LanguageElement;
 public class Approach extends LanguageElement {
 
     /** The activity */
-    public Activity activity;
+    private Activity activity;
 
     /** The name of the Approach */
-    public String name;
+    private String name;
 
     /**
      * Contains the detailed description or definition of the Approach.
      */
-    public String description;
+    private String description;
+
+    public Activity getActivity() {
+        return activity;
+    }
+
+    public void setActivity(Activity activity) {
+        this.activity = activity;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
 }

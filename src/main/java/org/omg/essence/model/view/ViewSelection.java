@@ -63,31 +63,79 @@ import org.omg.essence.model.foundation.*;
 public class ViewSelection extends LanguageElement {
 
     /** The name of the view. */
-    public String name;
+    private String name;
 
     /** A description of the view, including the purpose of the view. */
-    public String description;
+    private String description;
 
     /** The referring view selection. */
-    public Collection<ViewSelection> referringViewSelection;
+    private Collection<ViewSelection> referringViewSelection;
 
     /**
      * The selected constructs (such as Alpha, State, etc) to be included in the
      * view.
      */
-    public Collection<LanguageElement> constructSelection;
+    private Collection<LanguageElement> constructSelection;
 
     /**
      * ViewSelections to be included in this ViewSelection (provides a means to
      * build extended and more sophisticated views based on existing/smaller
      * views)
      */
-    public Collection<ViewSelection> includedViewSelection;
+    private Collection<ViewSelection> includedViewSelection;
 
     /**
      * The selected features, such as attributes and associations of constructs
      * to be included in the view.
      */
-    public Collection<FeatureSelection> featureSelection;
+    private Collection<FeatureSelection> featureSelection;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Collection<ViewSelection> getReferringViewSelection() {
+        return referringViewSelection;
+    }
+
+    public void setReferringViewSelection(Collection<ViewSelection> referringViewSelection) {
+        this.referringViewSelection = referringViewSelection;
+    }
+
+    public Collection<LanguageElement> getConstructSelection() {
+        return constructSelection;
+    }
+
+    public void setConstructSelection(Collection<LanguageElement> constructSelection) {
+        this.constructSelection = constructSelection;
+    }
+
+    public Collection<ViewSelection> getIncludedViewSelection() {
+        return includedViewSelection;
+    }
+
+    public void setIncludedViewSelection(Collection<ViewSelection> includedViewSelection) {
+        this.includedViewSelection = includedViewSelection;
+    }
+
+    public Collection<FeatureSelection> getFeatureSelection() {
+        return featureSelection;
+    }
+
+    public void setFeatureSelection(Collection<FeatureSelection> featureSelection) {
+        this.featureSelection = featureSelection;
+    }
 
 }

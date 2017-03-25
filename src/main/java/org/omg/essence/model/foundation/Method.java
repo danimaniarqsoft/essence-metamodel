@@ -73,9 +73,25 @@ public class Method extends ElementGroup {
      * Additional explanations can be given in the attribute “description”
      * inherited from “ElementGroup”.
      */
-    public String purpose;
+    private String purpose;
 
     /** The Kernel this Method is based on */
-    public Kernel baseKernel;
+    private Kernel baseKernel;
+
+    public String getPurpose() {
+        return purpose;
+    }
+
+    public void setPurpose(String purpose) {
+        this.purpose = purpose;
+    }
+
+    public Kernel getBaseKernel() {
+        return baseKernel;
+    }
+
+    public void setBaseKernel(Kernel baseKernel) {
+        this.baseKernel = baseKernel;
+    }
 
 }

@@ -61,14 +61,14 @@ import org.omg.essence.model.GraphicalElement;
 public abstract class BasicElement extends LanguageElement {
 
     /** The name of the element. */
-    public String name;
+    private String name;
 
     /**
      * The icon to be used when presenting the elements.
      * 
      * @see GraphicalElement
      */
-    public GraphicalElement icon;
+    private GraphicalElement icon;
 
     /**
      * A short and concise description of what the element is. It is discouraged
@@ -76,7 +76,7 @@ public abstract class BasicElement extends LanguageElement {
      * the brief description. The content of this attribute should be a summary
      * of the content fiven in attribute "description".
      */
-    public String briefDescription;
+    private String briefDescription;
 
     /**
      * A more detailed description of the element. The content of this attribute
@@ -84,6 +84,38 @@ public abstract class BasicElement extends LanguageElement {
      * may include section headings, formatting information, hyperlinks, or
      * similar to ease structured reading and navigation.
      */
-    public String description;
+    private String description;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public GraphicalElement getIcon() {
+        return icon;
+    }
+
+    public void setIcon(GraphicalElement icon) {
+        this.icon = icon;
+    }
+
+    public String getBriefDescription() {
+        return briefDescription;
+    }
+
+    public void setBriefDescription(String briefDescription) {
+        this.briefDescription = briefDescription;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
 }

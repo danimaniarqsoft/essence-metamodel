@@ -75,24 +75,80 @@ import java.util.*;
 public class State extends LanguageElement {
 
     /** The name of the state. */
-    public String name;
+    private String name;
 
     /** Some additional information about the state. */
-    public String description;
+    private String description;
 
     /** A collection of checkpoints associated with the state. */
-    public Collection<Checkpoint> checkListItem;
+    private Collection<Checkpoint> checkListItem;
 
     /** The successor state. */
-    public State successor;
+    private State successor;
 
     /** The criterion. */
-    public Collection<Criterion> criterion;
+    private Collection<Criterion> criterion;
 
     /** The alpha. */
-    public Alpha alpha;
+    private Alpha alpha;
 
     /** The predecessor. */
-    public State predecessor;
+    private State predecessor;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Collection<Checkpoint> getCheckListItem() {
+        return checkListItem;
+    }
+
+    public void setCheckListItem(Collection<Checkpoint> checkListItem) {
+        this.checkListItem = checkListItem;
+    }
+
+    public State getSuccessor() {
+        return successor;
+    }
+
+    public void setSuccessor(State successor) {
+        this.successor = successor;
+    }
+
+    public Collection<Criterion> getCriterion() {
+        return criterion;
+    }
+
+    public void setCriterion(Collection<Criterion> criterion) {
+        this.criterion = criterion;
+    }
+
+    public Alpha getAlpha() {
+        return alpha;
+    }
+
+    public void setAlpha(Alpha alpha) {
+        this.alpha = alpha;
+    }
+
+    public State getPredecessor() {
+        return predecessor;
+    }
+
+    public void setPredecessor(State predecessor) {
+        this.predecessor = predecessor;
+    }
 
 }

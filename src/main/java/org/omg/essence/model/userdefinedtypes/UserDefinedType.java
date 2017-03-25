@@ -66,24 +66,72 @@ import org.omg.essence.model.foundation.*;
 public class UserDefinedType extends LanguageElement {
 
     /** The name of the type. */
-    public String name;
+    private String name;
 
     /** A short description of what the type is about. */
-    public String description;
+    private String description;
 
     /**
      * Rules that apply to all constructs using this type. It is recommended to
      * use either plain text or OCL.
      */
-    public String constraint;
+    private String constraint;
 
     /** The typed resource. */
-    public Collection<TypedResource> typedResource;
+    private Collection<TypedResource> typedResource;
 
     /** The typed pattern. */
-    public Collection<TypedPattern> typedPattern;
+    private Collection<TypedPattern> typedPattern;
 
     /** The typed tag. */
-    public Collection<TypedTag> typedTag;
+    private Collection<TypedTag> typedTag;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getConstraint() {
+        return constraint;
+    }
+
+    public void setConstraint(String constraint) {
+        this.constraint = constraint;
+    }
+
+    public Collection<TypedResource> getTypedResource() {
+        return typedResource;
+    }
+
+    public void setTypedResource(Collection<TypedResource> typedResource) {
+        this.typedResource = typedResource;
+    }
+
+    public Collection<TypedPattern> getTypedPattern() {
+        return typedPattern;
+    }
+
+    public void setTypedPattern(Collection<TypedPattern> typedPattern) {
+        this.typedPattern = typedPattern;
+    }
+
+    public Collection<TypedTag> getTypedTag() {
+        return typedTag;
+    }
+
+    public void setTypedTag(Collection<TypedTag> typedTag) {
+        this.typedTag = typedTag;
+    }
 
 }

@@ -35,18 +35,58 @@ import org.omg.essence.model.foundation.*;
 public class Card {
 
     /** The model element. */
-    public BasicElement modelElement;
+    private BasicElement modelElement;
     
     /** The right header side. */
-    public Label rightHeaderSide;
+    private Label rightHeaderSide;
     
     /** The left header side. */
-    public Node leftHeaderSide;
+    private Node leftHeaderSide;
     
     /** The left body side. */
-    public Diagram leftBodySide;
+    private Diagram leftBodySide;
     
     /** The right body side. */
-    public Text rightBodySide;
+    private Text rightBodySide;
+
+    public BasicElement getModelElement() {
+        return modelElement;
+    }
+
+    public void setModelElement(BasicElement modelElement) {
+        this.modelElement = modelElement;
+    }
+
+    public Label getRightHeaderSide() {
+        return rightHeaderSide;
+    }
+
+    public void setRightHeaderSide(Label rightHeaderSide) {
+        this.rightHeaderSide = rightHeaderSide;
+    }
+
+    public Node getLeftHeaderSide() {
+        return leftHeaderSide;
+    }
+
+    public void setLeftHeaderSide(Node leftHeaderSide) {
+        this.leftHeaderSide = leftHeaderSide;
+    }
+
+    public Diagram getLeftBodySide() {
+        return leftBodySide;
+    }
+
+    public void setLeftBodySide(Diagram leftBodySide) {
+        this.leftBodySide = leftBodySide;
+    }
+
+    public Text getRightBodySide() {
+        return rightBodySide;
+    }
+
+    public void setRightBodySide(Text rightBodySide) {
+        this.rightBodySide = rightBodySide;
+    }
 
 }

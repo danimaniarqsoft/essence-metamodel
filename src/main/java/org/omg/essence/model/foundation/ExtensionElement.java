@@ -59,15 +59,47 @@ package org.omg.essence.model.foundation;
 public class ExtensionElement extends LanguageElement {
 
     /** The element group. */
-    public ElementGroup elementGroup;
+    private ElementGroup elementGroup;
 
     /** The element to be extended */
-    public LanguageElement targetElement;
+    private LanguageElement targetElement;
 
     /** The name of the attribute which is to be extended */
-    public String targetAttribute;
+    private String targetAttribute;
 
     /** The function applied to the target attribute */
-    public String extensionFunction;
+    private String extensionFunction;
+
+    public ElementGroup getElementGroup() {
+        return elementGroup;
+    }
+
+    public void setElementGroup(ElementGroup elementGroup) {
+        this.elementGroup = elementGroup;
+    }
+
+    public LanguageElement getTargetElement() {
+        return targetElement;
+    }
+
+    public void setTargetElement(LanguageElement targetElement) {
+        this.targetElement = targetElement;
+    }
+
+    public String getTargetAttribute() {
+        return targetAttribute;
+    }
+
+    public void setTargetAttribute(String targetAttribute) {
+        this.targetAttribute = targetAttribute;
+    }
+
+    public String getExtensionFunction() {
+        return extensionFunction;
+    }
+
+    public void setExtensionFunction(String extensionFunction) {
+        this.extensionFunction = extensionFunction;
+    }
 
 }

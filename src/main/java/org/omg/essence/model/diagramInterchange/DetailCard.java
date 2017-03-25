@@ -35,18 +35,58 @@ import org.omg.essence.model.foundation.*;
 public class DetailCard {
 
     /** The left header side. */
-    public Node leftHeaderSide;
+    private Node leftHeaderSide;
     
     /** The footer. */
-    public Label footer;
+    private Label footer;
     
     /** The header. */
-    public Node header;
+    private Node header;
     
     /** The body. */
-    public Text body;
+    private Text body;
     
     /** The model element. */
-    public BasicElement modelElement;
+    private BasicElement modelElement;
+
+    public Node getLeftHeaderSide() {
+        return leftHeaderSide;
+    }
+
+    public void setLeftHeaderSide(Node leftHeaderSide) {
+        this.leftHeaderSide = leftHeaderSide;
+    }
+
+    public Label getFooter() {
+        return footer;
+    }
+
+    public void setFooter(Label footer) {
+        this.footer = footer;
+    }
+
+    public Node getHeader() {
+        return header;
+    }
+
+    public void setHeader(Node header) {
+        this.header = header;
+    }
+
+    public Text getBody() {
+        return body;
+    }
+
+    public void setBody(Text body) {
+        this.body = body;
+    }
+
+    public BasicElement getModelElement() {
+        return modelElement;
+    }
+
+    public void setModelElement(BasicElement modelElement) {
+        this.modelElement = modelElement;
+    }
 
 }

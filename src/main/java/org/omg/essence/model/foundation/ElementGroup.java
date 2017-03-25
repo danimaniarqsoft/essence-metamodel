@@ -84,10 +84,10 @@ import org.omg.essence.model.GraphicalElement;
 public abstract class ElementGroup extends LanguageElement {
 
     /** The name of the element group */
-    public String name;
+    private String name;
 
     /** The icon to be used when presenting the element group */
-    public GraphicalElement icon;
+    private GraphicalElement icon;
 
     /**
      * A short description of what the group is. It is discoraged to use rich
@@ -95,7 +95,7 @@ public abstract class ElementGroup extends LanguageElement {
      * description. The content of this attribute should be a summary of the
      * content given in attribute "description".
      */
-    public String briefDescription;
+    private String briefDescription;
 
     /**
      * A more detailed description of the group. The content of this attribute
@@ -103,18 +103,84 @@ public abstract class ElementGroup extends LanguageElement {
      * may include section headings, formatting information, hyperlinks, or
      * similar to ease structured reading and navigation.
      */
-    public String description;
+    private String description;
 
     /** The merge resolution. */
-    public Collection<MergeResolution> mergeResolution;
+    private Collection<MergeResolution> mergeResolution;
 
     /** The language elements this group owns by value */
-    public Collection<LanguageElement> ownedElements;
+    private Collection<LanguageElement> ownedElements;
 
     /** The language elements this group owns by reference */
-    public Collection<LanguageElement> referredElements;
+    private Collection<LanguageElement> referredElements;
 
     /** The extension. */
-    public Collection<ExtensionElement> extension;
+    private Collection<ExtensionElement> extension;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public GraphicalElement getIcon() {
+        return icon;
+    }
+
+    public void setIcon(GraphicalElement icon) {
+        this.icon = icon;
+    }
+
+    public String getBriefDescription() {
+        return briefDescription;
+    }
+
+    public void setBriefDescription(String briefDescription) {
+        this.briefDescription = briefDescription;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Collection<MergeResolution> getMergeResolution() {
+        return mergeResolution;
+    }
+
+    public void setMergeResolution(Collection<MergeResolution> mergeResolution) {
+        this.mergeResolution = mergeResolution;
+    }
+
+    public Collection<LanguageElement> getOwnedElements() {
+        return ownedElements;
+    }
+
+    public void setOwnedElements(Collection<LanguageElement> ownedElements) {
+        this.ownedElements = ownedElements;
+    }
+
+    public Collection<LanguageElement> getReferredElements() {
+        return referredElements;
+    }
+
+    public void setReferredElements(Collection<LanguageElement> referredElements) {
+        this.referredElements = referredElements;
+    }
+
+    @Override
+    public Collection<ExtensionElement> getExtension() {
+        return extension;
+    }
+
+    @Override
+    public void setExtension(Collection<ExtensionElement> extension) {
+        this.extension = extension;
+    }
 
 }

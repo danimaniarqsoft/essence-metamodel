@@ -63,9 +63,25 @@ import java.util.*;
 public class Type {
 
     /** The property. */
-    public Collection<EndeavorProperty> property;
+    private Collection<EndeavorProperty> property;
 
     /** The name. */
-    public String name;
+    private String name;
+
+    public Collection<EndeavorProperty> getProperty() {
+        return property;
+    }
+
+    public void setProperty(Collection<EndeavorProperty> property) {
+        this.property = property;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
 }

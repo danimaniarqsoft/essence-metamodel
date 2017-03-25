@@ -83,12 +83,36 @@ import org.omg.essence.model.competency.*;
 public class Activity extends AbstractActivity {
 
     /** The approach. */
-    public Collection<Approach> approach;
+    private Collection<Approach> approach;
 
     /** The action. */
-    public Collection<Action> action;
+    private Collection<Action> action;
 
     /** The required competency level. */
-    public Collection<CompetencyLevel> requiredCompetencyLevel;
+    private Collection<CompetencyLevel> requiredCompetencyLevel;
+
+    public Collection<Approach> getApproach() {
+        return approach;
+    }
+
+    public void setApproach(Collection<Approach> approach) {
+        this.approach = approach;
+    }
+
+    public Collection<Action> getAction() {
+        return action;
+    }
+
+    public void setAction(Collection<Action> action) {
+        this.action = action;
+    }
+
+    public Collection<CompetencyLevel> getRequiredCompetencyLevel() {
+        return requiredCompetencyLevel;
+    }
+
+    public void setRequiredCompetencyLevel(Collection<CompetencyLevel> requiredCompetencyLevel) {
+        this.requiredCompetencyLevel = requiredCompetencyLevel;
+    }
 
 }

@@ -63,23 +63,79 @@ import org.omg.essence.model.foundation.*;
 public class AlphaAssociation extends LanguageElement {
 
     /** Lower bound of association endpoint 1. */
-    public int end1lowerBound;
+    private int end1lowerBound;
 
     /** Upper bound of association endpoint 1. */
-    public int end1upperBound;
+    private int end1upperBound;
 
     /** Lower bound of association endpoint 2. */
-    public int end2lowerBound;
+    private int end2lowerBound;
 
     /** Upper bound of association endpoint 2. */
-    public int end2upperBound;
+    private int end2upperBound;
 
     /** Name of the alpha association. */
-    public String name;
+    private String name;
 
     /** The alpha endpoint 1 of the association. */
-    public Alpha end1;
+    private Alpha end1;
 
     /** The alpha endpoint 2 of the association. */
-    public Alpha end2;
+    private Alpha end2;
+
+    public int getEnd1lowerBound() {
+        return end1lowerBound;
+    }
+
+    public void setEnd1lowerBound(int end1lowerBound) {
+        this.end1lowerBound = end1lowerBound;
+    }
+
+    public int getEnd1upperBound() {
+        return end1upperBound;
+    }
+
+    public void setEnd1upperBound(int end1upperBound) {
+        this.end1upperBound = end1upperBound;
+    }
+
+    public int getEnd2lowerBound() {
+        return end2lowerBound;
+    }
+
+    public void setEnd2lowerBound(int end2lowerBound) {
+        this.end2lowerBound = end2lowerBound;
+    }
+
+    public int getEnd2upperBound() {
+        return end2upperBound;
+    }
+
+    public void setEnd2upperBound(int end2upperBound) {
+        this.end2upperBound = end2upperBound;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Alpha getEnd1() {
+        return end1;
+    }
+
+    public void setEnd1(Alpha end1) {
+        this.end1 = end1;
+    }
+
+    public Alpha getEnd2() {
+        return end2;
+    }
+
+    public void setEnd2(Alpha end2) {
+        this.end2 = end2;
+    }
 }

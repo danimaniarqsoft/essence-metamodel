@@ -136,7 +136,7 @@ public class Practice extends ElementGroup {
      * these rules is out of the scope of this specification. It is recommended
      * to use either plain text or OCL.
      */
-    public String consistencyRules;
+    private String consistencyRules;
 
     /**
      * The objective of this Practice, expressed as a concise and isolated
@@ -145,24 +145,64 @@ public class Practice extends ElementGroup {
      * explanations can be given in the attribute “description” inherited from
      * “ElementGroup”.
      */
-    public String objective;
+    private String objective;
 
     /**
      * List of standard units used to evaluate the practice performance and the
      * objectives’ achievement.
      */
-    public Collection<String> measures;
+    private Collection<String> measures;
 
     /**
      * Expected characteristics of elements needed to start the execution of a
      * practice.
      */
-    public Collection<String> entry;
+    private Collection<String> entry;
 
     /**
      * Expected characteristics of elements required as outputs after the
      * execution a practice is completed.
      */
-    public Collection<String> result;
+    private Collection<String> result;
+
+    public String getConsistencyRules() {
+        return consistencyRules;
+    }
+
+    public void setConsistencyRules(String consistencyRules) {
+        this.consistencyRules = consistencyRules;
+    }
+
+    public String getObjective() {
+        return objective;
+    }
+
+    public void setObjective(String objective) {
+        this.objective = objective;
+    }
+
+    public Collection<String> getMeasures() {
+        return measures;
+    }
+
+    public void setMeasures(Collection<String> measures) {
+        this.measures = measures;
+    }
+
+    public Collection<String> getEntry() {
+        return entry;
+    }
+
+    public void setEntry(Collection<String> entry) {
+        this.entry = entry;
+    }
+
+    public Collection<String> getResult() {
+        return result;
+    }
+
+    public void setResult(Collection<String> result) {
+        this.result = result;
+    }
 
 }

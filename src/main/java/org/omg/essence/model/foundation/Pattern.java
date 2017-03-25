@@ -65,6 +65,14 @@ import java.util.*;
 public class Pattern extends BasicElement {
 
     /** Named association types between elements */
-    public Collection<PatternAssociation> association;
+    private Collection<PatternAssociation> association;
+
+    public Collection<PatternAssociation> getAssociation() {
+        return association;
+    }
+
+    public void setAssociation(Collection<PatternAssociation> association) {
+        this.association = association;
+    }
 
 }
