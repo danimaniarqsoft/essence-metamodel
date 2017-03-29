@@ -21,14 +21,21 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.omg.essence.model;
+package org.omg.essence.validations;
 
-/**
- * The Class QName.
- *
- * @author Daniel Cortes Pichardo
- * @version 1.1
- * @since essence 1.1
- */
-public interface QName {
+@FunctionalInterface
+public interface ValidationResult {
+
+    boolean isvalid();
+
+    static Object ok() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    static Object fail(String onErrorMessage) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
 }

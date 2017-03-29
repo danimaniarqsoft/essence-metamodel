@@ -21,14 +21,36 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.omg.essence.model;
+package org.omg.essence.util;
+
+import java.util.Objects;
+
+import org.omg.essence.exception.LanguageElementException;
 
 /**
- * The Class QName.
- *
+ * CommonValidations Class.
+ * 
  * @author Daniel Cortes Pichardo
- * @version 1.1
  * @since essence 1.1
+ * @version 1.1
  */
-public interface QName {
+public final class CommonValidations {
+
+    private CommonValidations() {
+
+    }
+
+    /**
+     * Validate if the object is null
+     * 
+     * @param object
+     * @param param
+     * @throws LanguageElementException
+     *             if the object is null
+     */
+    public static void notNull(Object object, String param) {
+        if (Objects.isNull(object)) {
+            throw new LanguageElementException("The " + param + " can not be null");
+        }
+    }
 }

@@ -21,14 +21,20 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.omg.essence.model;
+package org.omg.essence.validations;
 
 /**
- * The Class QName.
- *
+ * Invariant Class used to validate the Esscence object states
+ * 
  * @author Daniel Cortes Pichardo
- * @version 1.1
  * @since essence 1.1
+ * @version 1.1
+ * @param <T>
  */
-public interface QName {
+@FunctionalInterface
+public interface Validator<T> {
+
+    void validate(T element);
+    
+    
 }
