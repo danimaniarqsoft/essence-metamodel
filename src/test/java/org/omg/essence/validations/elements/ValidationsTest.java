@@ -35,7 +35,8 @@ import org.junit.Test;
 public class ValidationsTest {
     protected FormValidations getValidatorInstance() {
         return new FormValidations();
-      }
+    }
+
     /**
      * Test Method
      * 
@@ -43,6 +44,6 @@ public class ValidationsTest {
      */
     @Test
     public void test() {
-     
+
     }
 }
