@@ -36,14 +36,19 @@ import org.omg.essence.validations.core.Validator;
  * @version 1.1
  */
 public class FormValidations {
-    public static Validator<String> notNull = ModelValidation.from((s) -> s != null, "El valor no debe ser null");
+
+    public static final Validator<String> notNull = ModelValidation.from(s -> s != null, "El valor no debe ser null");
+
+    private FormValidations() {
+
+    }
 
     public static Validator<String> moreThan(int size) {
-        return ModelValidation.from((s) -> s.length() >= size, format("must have more than %s chars.", size));
+        return ModelValidation.from(s -> s.length() >= size, format("must have more than %s chars.", size));
     }
 
     public static Validator<String> lessThan(int size) {
-        return ModelValidation.from((s) -> s.length() <= size, format("must have less than %s chars.", size));
+        return ModelValidation.from(s -> s.length() <= size, format("must have less than %s chars.", size));
     }
 
     public static Validator<String> between(int minSize, int maxSize) {
@@ -51,7 +56,7 @@ public class FormValidations {
     }
 
     public static Validator<String> contains(String c) {
-        return ModelValidation.from((s) -> s.contains(c), format("must contain %s", c));
+        return ModelValidation.from(s -> s.contains(c), format("must contain %s", c));
     }
 
 }

@@ -29,7 +29,7 @@ public class ModelValidation<K> implements Validator<K> {
     }
 
     public static <K> ModelValidation<K> from(Predicate<K> predicate, String onErrorMessage) {
-        return new ModelValidation<K>(predicate, onErrorMessage);
+        return new ModelValidation<>(predicate, onErrorMessage);
     }
 
     @Override

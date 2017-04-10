@@ -34,10 +34,6 @@ public class ValidationResult {
         this.onErrorMessage = onErrorMessage;
     }
 
-    private ValidationResult(boolean valid) {
-        this.valid = valid;
-    }
-
     public String getOnErrorMessage() {
         return onErrorMessage;
     }

@@ -33,9 +33,6 @@ import org.junit.Test;
  * @version 1.1
  */
 public class ValidationsTest {
-    protected FormValidations getValidatorInstance() {
-        return new FormValidations();
-    }
 
     /**
      * Test Method
