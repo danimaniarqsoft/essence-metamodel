@@ -52,8 +52,8 @@ public class LanguageElementException extends RuntimeException {
      *            the detail message. The detail message is saved for later
      *            retrieval by the {@link #getMessage()} method.
      */
-    public LanguageElementException(String s) {
-        super(s);
+    public LanguageElementException(String message) {
+        super(message);
     }
 
     /**
@@ -70,8 +70,8 @@ public class LanguageElementException extends RuntimeException {
      *            unknown.)
      * 
      */
-    public LanguageElementException(String s, Throwable throwable) {
-        super(s, throwable);
+    public LanguageElementException(String message, Throwable cause) {
+        super(message, cause);
     }
 
     /**
@@ -89,8 +89,8 @@ public class LanguageElementException extends RuntimeException {
      *            unknown.)
      * 
      */
-    public LanguageElementException(Throwable throwable) {
-        super(throwable);
+    public LanguageElementException(Throwable cause) {
+        super(cause);
     }
 
 }

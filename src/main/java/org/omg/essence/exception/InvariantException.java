@@ -43,8 +43,8 @@ public class InvariantException extends LanguageElementException {
      *            the detail message. The detail message is saved for later
      *            retrieval by the {@link #getMessage()} method.
      */
-    public InvariantException(String s) {
-        super(s);
+    public InvariantException(String message) {
+        super(message);
     }
 
     /**
@@ -61,8 +61,8 @@ public class InvariantException extends LanguageElementException {
      *            unknown.)
      * 
      */
-    public InvariantException(String s, Throwable throwable) {
-        super(s, throwable);
+    public InvariantException(String message, Throwable cause) {
+        super(message, cause);
     }
 
 }

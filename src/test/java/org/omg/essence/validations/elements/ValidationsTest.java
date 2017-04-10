@@ -37,7 +37,6 @@ public class ValidationsTest {
     /**
      * Test Method
      * 
-     * @param args
      */
     @Test
     public void test() {
