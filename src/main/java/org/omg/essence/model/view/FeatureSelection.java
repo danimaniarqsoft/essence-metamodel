@@ -23,9 +23,7 @@
  */
 package org.omg.essence.model.view;
 
-import java.util.*;
-
-import org.omg.essence.model.foundation.*;
+import org.omg.essence.model.foundation.LanguageElement;
 
 /**
  * <pre>
