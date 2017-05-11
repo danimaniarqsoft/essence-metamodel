@@ -63,7 +63,7 @@ import java.util.*;
 public interface Type {
 
     /** The property. */
-    Collection<EndeavorProperty> getProperty();
+    Collection<? extends EndeavorProperty> getProperty();
 
     /** The name. */
     String getName();

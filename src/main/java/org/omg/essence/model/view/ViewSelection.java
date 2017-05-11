@@ -69,26 +69,26 @@ public interface ViewSelection extends LanguageElement {
     String getDescription();
 
     /** The referring view selection. */
-    Collection<ViewSelection> getReferringViewSelection();
+    Collection<? extends ViewSelection> getReferringViewSelection();
 
     /**
      * The selected constructs (such as Alpha, State, etc) to be included in the
      * view.
      */
-    Collection<LanguageElement> getConstructSelection();
+    Collection<? extends LanguageElement> getConstructSelection();
 
     /**
      * ViewSelections to be included in this ViewSelection (provides a means to
      * build extended and more sophisticated views based on existing/smaller
      * views)
      */
-    Collection<ViewSelection> getIncludedViewSelection();
+    Collection<? extends ViewSelection> getIncludedViewSelection();
 
     /**
      * The selected features, such as attributes and associations of constructs
      * to be included in the view.
      */
     @Override
-    Collection<FeatureSelection> getFeatureSelection();
+    Collection<? extends FeatureSelection> getFeatureSelection();
 
 }

@@ -78,12 +78,12 @@ public interface CompetencyLevel extends LanguageElement {
     int getLevel();
 
     /** The activity. */
-    Collection<Activity> getActivity();
+    Collection<? extends Activity> getActivity();
 
     /** The competency. */
     Competency getCompetency();
 
     /** The checklist item. */
-    Collection<Checkpoint> getChecklistItem();
+    Collection<? extends Checkpoint> getChecklistItem();
 
 }

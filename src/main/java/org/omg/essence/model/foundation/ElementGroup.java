@@ -106,12 +106,12 @@ public interface ElementGroup extends LanguageElement {
     String getDescription();
 
     /** The merge resolution. */
-    Collection<MergeResolution> getMergeResolution();
+    Collection<? extends MergeResolution> getMergeResolution();
 
     /** The language elements this group owns by value */
-    Collection<LanguageElement> getOwnedElements();
+    Collection<? extends LanguageElement> getOwnedElements();
 
     /** The language elements this group owns by reference */
-    Collection<LanguageElement> getReferredElements();
+    Collection<? extends LanguageElement> getReferredElements();
 
 }

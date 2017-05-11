@@ -70,6 +70,6 @@ public interface ActivitySpace extends AbstractActivity {
      * A collection of alphas that have to be present to be successful in
      * fulfilling the objectives of this activity space.
      */
-    public Collection<Alpha> getInput();
+    public Collection<? extends Alpha> getInput();
 
 }

@@ -75,12 +75,12 @@ import java.util.*;
 public interface WorkProduct extends BasicElement {
 
     /** The level of details defined for the work product. */
-    Collection<LevelOfDetail> getLevelOfDetail();
+    Collection<? extends LevelOfDetail> getLevelOfDetail();
 
     /** The action. */
-    Collection<Action> getAction();
+    Collection<? extends Action> getAction();
 
     /** The work product manifest. */
-    Collection<WorkProductManifest> getWorkProductManifest();
+    Collection<? extends WorkProductManifest> getWorkProductManifest();
 
 }

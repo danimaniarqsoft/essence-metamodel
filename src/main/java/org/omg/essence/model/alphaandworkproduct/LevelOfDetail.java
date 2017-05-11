@@ -95,13 +95,13 @@ public interface LevelOfDetail extends LanguageElement {
     String getName();
 
     /** Checklist items to determine if the level of detail has been reached. */
-    Collection<Checkpoint> getCheckListItem();
+    Collection<? extends Checkpoint> getCheckListItem();
 
     /** Next level of detail. */
     LevelOfDetail getSuccessor();
 
     /** The criterion. */
-    Collection<Criterion> getCriterion();
+    Collection<? extends Criterion> getCriterion();
 
     /** The predecessor. */
     LevelOfDetail getPredecessor();

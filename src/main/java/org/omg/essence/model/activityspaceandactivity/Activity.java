@@ -83,12 +83,12 @@ import org.omg.essence.model.competency.*;
 public interface Activity extends AbstractActivity {
 
     /** The approach. */
-    Collection<Approach> getApproach();
+    Collection<? extends Approach> getApproach();
 
     /** The action. */
-    Collection<Action> getAction();
+    Collection<? extends Action> getAction();
 
     /** The required competency level. */
-    Collection<CompetencyLevel> getRequiredCompetencyLevel();
+    Collection<? extends CompetencyLevel> getRequiredCompetencyLevel();
 
 }

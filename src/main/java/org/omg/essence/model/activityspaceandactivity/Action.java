@@ -86,10 +86,10 @@ public interface Action extends LanguageElement {
     Activity getActivity();
 
     /** The alpha. */
-    Collection<Alpha> getAlpha();
+    Collection<? extends Alpha> getAlpha();
 
     /** The work product. */
-    Collection<WorkProduct> getWorkProduct();
+    Collection<? extends WorkProduct> getWorkProduct();
 
     /** The kind. */
     ActionKind getKind();

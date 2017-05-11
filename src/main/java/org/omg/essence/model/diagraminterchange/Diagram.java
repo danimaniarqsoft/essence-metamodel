@@ -36,6 +36,6 @@ import java.util.*;
 public interface Diagram {
 
     /** The diagram element. */
-    Collection<DiagramElement> getDiagramElement();
+    Collection<? extends DiagramElement> getDiagramElement();
 
 }

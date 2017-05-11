@@ -81,13 +81,13 @@ public interface State extends LanguageElement {
     String getDescription();
 
     /** A collection of checkpoints associated with the state. */
-    Collection<Checkpoint> getCheckListItem();
+    Collection<? extends Checkpoint> getCheckListItem();
 
     /** The successor state. */
     State getSuccessor();
 
     /** The criterion. */
-    Collection<Criterion> getCriterion();
+    Collection<? extends Criterion> getCriterion();
 
     /** The alpha. */
     Alpha getAlpha();

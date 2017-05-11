@@ -151,18 +151,18 @@ public interface Practice extends ElementGroup {
      * List of standard units used to evaluate the practice performance and the
      * objectives’ achievement.
      */
-    Collection<String> getMeasures();
+    Collection<? extends String> getMeasures();
 
     /**
      * Expected characteristics of elements needed to start the execution of a
      * practice.
      */
-    Collection<String> getEntry();
+    Collection<? extends String> getEntry();
 
     /**
      * Expected characteristics of elements required as outputs after the
      * execution a practice is completed.
      */
-    Collection<String> getResult();
+    Collection<? extends String> getResult();
 
 }

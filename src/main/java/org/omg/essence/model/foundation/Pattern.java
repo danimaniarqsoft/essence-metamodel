@@ -65,6 +65,6 @@ import java.util.*;
 public interface Pattern extends BasicElement {
 
     /** Named association types between elements */
-    Collection<PatternAssociation> getAssociation();
+    Collection<? extends PatternAssociation> getAssociation();
 
 }

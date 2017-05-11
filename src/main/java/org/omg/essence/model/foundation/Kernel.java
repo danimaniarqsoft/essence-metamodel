@@ -91,7 +91,7 @@ import java.util.*;
 public interface Kernel extends ElementGroup {
 
     /** The referring method. */
-    Collection<Method> getReferringMethod();
+    Collection<? extends Method> getReferringMethod();
 
     /**
      * A set of rules on the consistency of a particular Kernel. The format for

@@ -66,6 +66,6 @@ import org.omg.essence.model.foundation.*;
 public interface Competency extends BasicElement {
 
     /** A collection of levels defined for this competency. */
-    Collection<CompetencyLevel> getPossibleLevel();
+    Collection<? extends CompetencyLevel> getPossibleLevel();
     
 }

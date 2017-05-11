@@ -77,36 +77,36 @@ public interface LanguageElement {
     ElementGroup getOwner();
 
     /** Tags associated with this language element */
-    Collection<Tag> getTag();
+    Collection<? extends Tag> getTag();
 
     /** Resources associated with this language element. */
-    Collection<Resource> getResource();
+    Collection<? extends Resource> getResource();
 
     /**
      * Properties (defined at M1 level) that you want to track during the
      * endeavor.
      */
-    Collection<EndeavorProperty> getProperties();
+    Collection<? extends EndeavorProperty> getProperties();
 
     /**
      * A list of ViewSelection selects a subset of constructs and construct
      * features such as attributes and associations.
      */
-    Collection<ViewSelection> getViewSelection();
+    Collection<? extends ViewSelection> getViewSelection();
 
     /**
      * The selected features, such as attributes and associations of constructs
      * to be included in the view.
      */
-    Collection<FeatureSelection> getFeatureSelection();
+    Collection<? extends FeatureSelection> getFeatureSelection();
 
     /** The extension. */
-    Collection<ExtensionElement> getExtension();
+    Collection<? extends ExtensionElement> getExtension();
 
     /** The referrer. */
-    Collection<ElementGroup> getReferrer();
+    Collection<? extends ElementGroup> getReferrer();
 
     /** The pattern association. */
-    Collection<PatternAssociation> getPatternAssociation();
+    Collection<? extends PatternAssociation> getPatternAssociation();
 
 }

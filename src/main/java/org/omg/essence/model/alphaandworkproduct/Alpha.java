@@ -97,21 +97,21 @@ import java.util.*;
 public interface Alpha extends BasicElement {
 
     /** The states of the alpha. */
-    Collection<State> getStates();
+    Collection<? extends State> getStates();
 
     /** The action. */
-    Collection<Action> getAction();
+    Collection<? extends Action> getAction();
 
     /** The activity space. */
     ActivitySpace getActivitySpace();
 
     /** The alpha containment. */
-    Collection<AlphaContainment> getAlphaContainment();
+    Collection<? extends AlphaContainment> getAlphaContainment();
 
     /** The alpha association. */
-    Collection<AlphaAssociation> getAlphaAssociation();
+    Collection<? extends AlphaAssociation> getAlphaAssociation();
 
     /** The work product manifest. */
-    Collection<WorkProductManifest> getWorkProductManifest();
+    Collection<? extends WorkProductManifest> getWorkProductManifest();
 
 }

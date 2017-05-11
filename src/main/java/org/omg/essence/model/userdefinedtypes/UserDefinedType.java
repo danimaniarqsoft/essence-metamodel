@@ -78,12 +78,12 @@ public interface UserDefinedType extends LanguageElement {
     String getConstraint();
 
     /** The typed resource. */
-    Collection<TypedResource> getTypedResource();
+    Collection<? extends TypedResource> getTypedResource();
 
     /** The typed pattern. */
-    Collection<TypedPattern> getTypedPattern();
+    Collection<? extends TypedPattern> getTypedPattern();
 
     /** The typed tag. */
-    Collection<TypedTag> getTypedTag();
+    Collection<? extends TypedTag> getTypedTag();
 
 }

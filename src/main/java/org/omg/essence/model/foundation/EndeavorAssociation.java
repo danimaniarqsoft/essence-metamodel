@@ -59,9 +59,9 @@ import java.util.*;
 public interface EndeavorAssociation {
 
     /** The properties of this association */
-    Collection<EndeavorProperty> getOwnedEnd();
+    Collection<? extends EndeavorProperty> getOwnedEnd();
 
     /** End properties of the association */
-    Collection<EndeavorProperty> getMemberEnd();
+    Collection<? extends EndeavorProperty> getMemberEnd();
 
 }

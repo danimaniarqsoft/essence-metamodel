@@ -68,7 +68,7 @@ public interface PatternAssociation extends LanguageElement {
     String getName();
 
     /** The elements taking part in the pattern via this association */
-    Collection<LanguageElement> getElements();
+    Collection<? extends LanguageElement> getElements();
 
     /** The pattern. */
     Pattern getPattern();
