@@ -1,0 +1,12 @@
+org.omg.essence.exception
+org.omg.essence.model
+org.omg.essence.model.activityspaceandactivity
+org.omg.essence.model.alphaandworkproduct
+org.omg.essence.model.competency
+org.omg.essence.model.diagraminterchange
+org.omg.essence.model.foundation
+org.omg.essence.model.userdefinedtypes
+org.omg.essence.model.view
+org.omg.essence.util
+org.omg.essence.validations.core
+org.omg.essence.validations.elements
