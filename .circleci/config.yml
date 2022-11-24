@@ -26,10 +26,14 @@ jobs:
       - run:
           name: Test
           command: mvn test
+      # Setup
+      - run:
+          name: Setup
+          command: /create-settings.sh
       # Then deploy!
       - run:
           name: Deploy
-          command: mvn deploy
+          command: /create-settings.sh && mvn deploy
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
