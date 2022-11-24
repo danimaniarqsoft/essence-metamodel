@@ -9,6 +9,25 @@
 	<packaging>jar</packaging>
 	<description>The Essence - Kernel And Language For Software Engineering Methods, Version 1.1 for Java </description>
 
+    <repositories>
+        <repository>
+            <id>crip-conacyt</id>
+            <name>repositorio para crip</name>
+            <url>https://artifacts.crip.conacyt.mx/content/groups/public/</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>crip-releases</id>
+            <url>https://artifacts.crip.conacyt.mx/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>crip-snapshots</id>
+            <url>https://artifacts.crip.conacyt.mx/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
