@@ -19,6 +19,7 @@
 		<maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
 		<maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
 		<maven-enforcer-plugin.version>3.5.0</maven-enforcer-plugin.version>
+		<maven-javadoc-plugin-version>3.7.0</maven-javadoc-plugin-version>
 		<argLine>-Djava.security.egd=file:/dev/./urandom -Xmx1G</argLine>
 		<sonar.maven.plugin.version>3.0.1</sonar.maven.plugin.version>
 		<!-- Sonar properties -->
@@ -84,8 +85,26 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.10.4</version>
-				<configuration></configuration>
+				<version>${maven-javadoc-plugin-version}</version>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<doclet>nl.talsmasoftware.umldoclet.UMLDoclet</doclet>
+					<docletArtifact>
+						<groupId>nl.talsmasoftware</groupId>
+						<artifactId>umldoclet</artifactId>
+						<version>2.1.2</version>
+					</docletArtifact>
+					<additionalOptions>
+						<!--<additionalOption>...</additionalOption>-->
+					</additionalOptions>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
