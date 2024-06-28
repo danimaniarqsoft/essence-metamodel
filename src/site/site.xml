@@ -23,11 +23,6 @@
 		<breadcrumbs>
 			<item name="Home" href="index.html" />
 		</breadcrumbs>
-		<menu name="Overview">
-			<item name="Foo" href="ejemplo.html" />
-			<item name="FAQ" href="markdown.html" />
-		</menu>
-
 		<menu ref="reports" />
 		<menu name="Información del proyecto" ref="reports" inherit="bottom" />
 		<footer><![CDATA[All rights reserved.]]></footer>
