@@ -2,94 +2,34 @@
 <project xmlns="http://maven.apache.org/DECORATION/1.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
-	<version position="bottom" />
-	<publishDate position="bottom" format="dd/MM/yyyy" />
-	<skin>
-		<groupId>lt.velykis.maven.skins</groupId>
-		<artifactId>reflow-maven-skin</artifactId>
-		<version>1.1.1</version>
-	</skin>
-	<custom>
-		<reflowSkin>
-			<!-- Themes -default|site|bootswatch-cerulean|bootswatch-readable|bootswatch-spacelab|bootswatch-spruce|bootswatch-united -->
-			<theme>bootswatch-spruce</theme>
-			<highlightJs>true</highlightJs>
-			<highlightJsTheme>github</highlightJsTheme>
-			<imgLightbox>true</imgLightbox>
-			<smoothScroll>true</smoothScroll>
-			<bootstrapCSS>true</bootstrapCSS>
-			<bootstrapIcons>true</bootstrapIcons>
-			<navbarInverse>false</navbarInverse>
-			<skinAttribution>false</skinAttribution>
-			<shortTitle><![CDATA[<img src="images/appbar2.png" width="25" height="25" alt="&quot;" infotec ' ="">]]></shortTitle>
-			<brand>
-				<name><![CDATA[<img src="images/infotec-logo2.png" alt="&quot;" infotec ' ="">]]></name>
-				<href>http://infotec.com.mx/</href>
-			</brand>
-			<bottomNav>
-				<column>reports</column>
-				<column>Markdown</column>
-			</bottomNav>
-			<bottomDescription quote="true">
-			<![CDATA[
-          	El pensamiento elevado y
-				puro, qué es generador de
-				magnificos
-				sistemas, sólo puede obtenerse a
-				través de los méritos.
-       		]]>
+	<poweredBy>
+		<logo name="Maven" href="https://maven.apache.org/"
+			img="https://maven.apache.org/images/logos/maven-feather.png" />
+	</poweredBy>
+	<bannerLeft>
+		<name>Essence Languaje</name>
+		<src>https://maven.apache.org/images/apache-maven-project-2.png</src>
+	</bannerLeft>
+	<version position="right" />
+	<publishDate position="right" format="dd/MM/yyyy" />
 
-			</bottomDescription>
-			<pages>
-				<index project="component-skin">
-				</index>
-				<contribute>
-					<breadcrumbs>false</breadcrumbs>
-				</contribute>
-				<!-- Disable source highlighting for Maven reports -->
-				<source-repository>
-					<highlightJs>false</highlightJs>
-				</source-repository>
-				<issue-tracking>
-					<highlightJs>false</highlightJs>
-					<toc>false</toc>
-				</issue-tracking>
-				<license>
-					<highlightJs>false</highlightJs>
-					<toc>false</toc>
-				</license>
-				<!-- Disable ToC for some Maven reports -->
-				<project-info>
-					<toc>false</toc>
-				</project-info>
-				<github-report>
-					<toc>false</toc>
-				</github-report>
-				<dependencies>
-					<tocTopMax>4</tocTopMax>
-				</dependencies>
-			</pages>
-		</reflowSkin>
-	</custom>
+	<skin>
+		<groupId>org.apache.maven.skins</groupId>
+		<artifactId>maven-fluido-skin</artifactId>
+		<version>2.0.0-M9</version>
+	</skin>
 	<body>
-		<head>
-			<link rel="shortcut icon" href="images/favicon.png"></link>
-		</head>
+		<head></head>
 		<breadcrumbs>
 			<item name="Home" href="index.html" />
-			<item name="Autor" href="team-list.html" />
 		</breadcrumbs>
+		<menu name="Overview">
+			<item name="Foo" href="ejemplo.html" />
+			<item name="FAQ" href="markdown.html" />
+		</menu>
 
 		<menu ref="reports" />
 		<menu name="Información del proyecto" ref="reports" inherit="bottom" />
-		<menu name="Uso">
-			<item name="Configuración" href="configuracion.html" />
-			<item name="Ejemplos" href="ejemplo.html" />
-			<item name="Restricciones" href="restricciones.html" />
-		</menu>
-		<menu name="Markdown">
-			<item name="Sintaxis" href="markdown.html" />
-		</menu>
-		<footer>Todos los derechos reservados.</footer>
+		<footer><![CDATA[All rights reserved.]]></footer>
 	</body>
 </project>

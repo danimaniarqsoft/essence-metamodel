@@ -109,45 +109,19 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-site-plugin</artifactId>
-				<version>3.6</version>
+				<version>4.0.0-M15</version>
 				<configuration>
-					<skipDeploy>true</skipDeploy>
 					<locales>es,mx</locales>
 				</configuration>
 				<dependencies>
 					<dependency>
-						<groupId>lt.velykis.maven.skins</groupId>
-						<artifactId>reflow-velocity-tools</artifactId>
-						<version>1.1.1</version>
-					</dependency>
-					<!-- Reflow skin requires Velocity >= 1.7 -->
-					<dependency>
-						<groupId>org.apache.velocity</groupId>
-						<artifactId>velocity</artifactId>
+						<groupId>org.apache.maven.doxia</groupId>
+						<artifactId>doxia-module-markdown</artifactId>
 						<version>1.7</version>
 					</dependency>
 				</dependencies>
 			</plugin>
-			<plugin>
-				<groupId>com.github.github</groupId>
-				<artifactId>site-maven-plugin</artifactId>
-				<version>0.12</version>
-				<configuration>
-					<message>Construyendo el sitio para ${project.version}</message>
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>site</goal>
-						</goals>
-						<phase>site-deploy</phase>
-						<configuration>
-							<path>${project.version}</path>
-							<merge>true</merge>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+
 			<!-- Sonarqube Plugin -->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -168,6 +142,18 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>${maven-javadoc-plugin-version}</version>
+				<configuration>
+					<doclet>nl.talsmasoftware.umldoclet.UMLDoclet</doclet>
+					<docletArtifact>
+						<groupId>nl.talsmasoftware</groupId>
+						<artifactId>umldoclet</artifactId>
+						<version>2.1.2</version>
+					</docletArtifact>
+					<additionalOptions>
+						<!--<additionalOption>...</additionalOption>-->
+					</additionalOptions>
+				</configuration>
 			</plugin>
 		</plugins>
 	</reporting>
